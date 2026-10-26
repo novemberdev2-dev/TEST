@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBS_Pharmacology</title>
+    <link rel="stylesheet" href="tools.css?v=1">
+</head>
+<body>
+
+<script>
+/* ---- Settings for THIS page only. Everything else lives in tools.js / tools.css ---- */
+window.QUIZ_CONFIG = {
+    title:    "IBS",
+    subtitle: "Pharmacology 💊 · All Years",
+    note:     "",                       // optional note shown under the heading
+
+    // ONE subject only? Remove the // before the next line and write the subject name.
+    // (the filter icon then disappears automatically; the "subjects" list below can stay)
+    subject: "Pharmacology 💊",
+
+    // ONE subject + filter by YEARS? Remove the // before the "subject" line above AND before this block.
+    // The filter icon stays, but it lists the years instead of subjects.
+    // "number" = question numbers (the "n" of each question): ranges and single numbers, e.g. "1-10,23".
+    // Selecting a year shows the year name as the title, and only the lectures used by that year's questions.
+    // If "subject" is NOT written, this "years" block is ignored (the subjects filter is used).
+    years: [
+    
+         { year: "Final _ 2020-2021", number: "1-16" },
+        
+          { year: "End-Block _ 2021-2022", number: "17-22" },
+          { year: "Final _ 2021-2022", number: "23-50" },
+          { year: "Final _ 2022-2023", number: "51-65" },
+          { year: "End-Block _ 2023-2024", number: "66-72" },
+         
+          { year: "End-Block _ 2024-2025", number: "73-80,128" },
+          { year: "Final _ 2024-2025", number: "81-95" },
+          { year: "End-Block _ 2025-2026", number: "96-102" },
+          { year: "Final _ 2025-2026", number: "103-122" },
+          { year: "Quiz _ 2026-2027", number: "165-179" },
+           { year: "Final or End-Block _ Unknown Year", number: "129-164" },
+          { year: "Quiz _ Unknown Year", number: "123-127" },
+
+
+
+     ],
+
+    // Subjects shown in the filter list (order = order in the list)
+   
+
+    // Write each lecture ONCE, under its subject: number: "Name".
+    // The same number can be reused in different subjects (matched by s + l).
+    lectures: {
+       
+        "Pharmacology": {
+          1: "Introduction to Pharmacology",
+    2: "Pharmacokinetics",
+    3: "Pharmacodynamics",
+    4: "Drug Metabolism",
+    5: "Drug-Receptor Interactions",
+    6: "Introduction to Chemotherapy",
+    7: "Parasympathomimetics",
+    8: "Drugs Acting on the Autonomic Nervous System",
+    9: "Drugs Affecting Adrenergic Neuron Transmission",
+    10: "Cell wall synthesis inhibitors Ⅰ",
+    11: "Sympathomimetic drugs",
+    12: "Adrenergic receptor blockers",
+    13: "Cell wall synthesis inhibitors Ⅱ",
+    14: "Antimicrobial agents inhibiting bacterial nucleic acid synthesis",
+    15: "Inhibitors of bacterial protein synthesis",
+    16: "Adverse drug reactions",
+    17: "EXCRETION",
+    18: "Antifungals",
+    19: "Parasympatholytics (Anticholinergic drugs)",
+    
+    20: "NOT SEPARATED YET",
+        },
+       
+    
+    },
+
+    questions: [
+      
+ 
+ {
+    "n": 73,
+    "s": "Pharmacology",
+    "l": 11,
+    "q": "A student takes amphetamine to improve academic performance. What are the short-term adverse effects?",
+    "o": ["A. Addiction.", "B. Tolerance.", "C. Cardiovascular problems.", "D. Increased blood pressure.", "E. All of them"],
+    "a": "E"
+  },
+  {
+    "n": 74,
+    "s": "Pharmacology",
+    "l": 20,
+    "q": "A patient who had been taking morphine and then doubled the dose:",
+    "o": ["A. Addiction", "B. Drug dependence", "C. Idiosyncrasy", "D. Tolerance", "E. All of them"],
+    "a": "D (Not sure)"
+  },
+  {
+    "n": 75,
+    "s": "Pharmacology",
+    "l": 10,
+    "q": "Amoxicillin is preferred over ampicillin for which of the following conditions?",
+    "o": ["A. Urinary tract infection.", "B. Chronic bronchitis.", "C. Acute gastritis.", "D. Septic shock.", "E. Meningitis."],
+    "a": "B"
+  },
+  {
+    "n": 76,
+    "s": "Pharmacology",
+    "l": 10,
+    "q": "Which of the following is bacteriostatic?",
+    "o": ["A. Penicillins", "B. Cephalosporins", "C. Tetracyclines", "D. Aminoglycosides", "E. Fluoroquinolones"],
+    "a": "C"
+  },
+  {
+    "n": 77,
+    "s": "Pharmacology",
+    "l": 15,
+    "q": "Which of the following are adverse effects of aminoglycosides?",
+    "o": ["A. Hepatotoxicity", "B. Pulmonary fibrosis", "C. Nephrotoxicity", "D. Bone marrow suppression", "E. Cardiotoxicity"],
+    "a": "C"
+  },
+  {
+    "n": 78,
+    "s": "Pharmacology",
+    "l": 3,
+    "q": "Which one of them is NOT a drug target?",
+    "o": ["A. Lysosome", "B. Ion channels", "C. Receptors", "D. Enzymes", "E. Carrier molecules"],
+    "a": "A"
+  },
+  {
+    "n": 79,
+    "s": "Pharmacology",
+    "l": 12,
+    "q": "Which of the following is a clinical indication for the use of beta-blockers?",
+  "o": ["A. Benign prostatic hyperplasia (BPH)", "B. Acute asthma attack", "C. Arrhythmia", "D. Cardiogenic shock", "E. Decompensated heart failure"],
+  "a": "C"
+
+  },
+  {
+    "n": 80,
+    "s": "Pharmacology",
+    "l": 5,
+    "q": "Which of the following describes inverse agonist the best?",
+    "o": ["A. Binds to the site (affinity) and reduces it below the baseline level of activity (effect)", "B. Binds to the site and produces the maximal response possible", "C. Binds to the site and blocks the endogenous ligand without shifting baseline activity", "D. Binds to an allosteric site to enhance agonist activity", "E. Destroys the receptor site through irreversible covalent binding"],
+    "a": "A"
+  },
+
+ 
+
+    { 
+    n: 128, 
+    s: "Pharmacology", 
+    l: 11, 
+    q: "Why dopamine is drug of choice for shock?", 
+    o: [""], 
+    a: "Dopamine is the drug of choice for shock. It raises blood pressure by increasing cardiac output (Stimulation of B1 receptor) and peripheral vascular resistance by causing vasoconstriction (Through stimulation of alpha 1 receptor. In addition, it also causes vasodilation of renal blood vessels (Stimulation of D1 receptor); therefore this drug unlike the other catecholamines it can increase renal blood flow."
+  },
+
+  
+    ]
+};
+</script>
+<script src="tools.js?v=2"></script>
+</body>
+</html>
