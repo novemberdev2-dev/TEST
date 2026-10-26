@@ -6,29 +6,41 @@
 
 
 /* =====================================================================
-   LINKED YEAR PAGES  (a year page owns NO questions)
+   LINKED PAGES  -  questions are stored ONCE, in the YEAR files
    ---------------------------------------------------------------------
-   A year page (e.g. IBS_End-Block_2024-2025) only writes:
+   YEAR file  (e.g. IBS_End-Block_2024-2025.html)  owns the questions of every subject:
 
        window.QUIZ_CONFIG = {
-           title: "IBS", subtitle: "End-Block · 2024-2025",
-           year: "End-Block _ 2024-2025",            // must match a  year: "..."  line inside the subject files
-           sources: [ "IBS_Pathology_All Years.html", "IBS_Biochemistry.html", ... ]   // the subject files
+           title: "IBS 🧪", subtitle: "End-Block · 2024-2025",
+           year: "End-Block _ 2024-2025",          // the name shown in the subject pages' year filter
+           subjectFiles: [ "IBS_Pathology_All Years.html", ... ],   // read ONLY for subject name, emoji and lecture names
+           questions: [ { n: 1, s: "Pathology", l: 7, q: "...", o: [...], a: "B" }, ... ]
        };
+       "s" = subject name (as written in that subject file), "l" = lecture number (as in that subject file).
+       "n" only has to be unique for the same subject inside the year file (it keeps pins / drawings attached).
 
-   For every subject file this code reads its QUIZ_CONFIG, finds the entry of its "years" list
-   whose name equals  year  and takes the questions whose number ("n") is listed there.
-   Subject, emoji and lecture names also come from the subject file, and only lectures that
-   have at least one question in this year are listed.  Questions are therefore stored ONCE
-   (in the subject file) and every change shows up here automatically.
+   SUBJECT file (e.g. IBS_Biochemistry.html) owns the lectures and pulls its questions from the year files:
+
+       window.QUIZ_CONFIG = {
+           title, subtitle, subject: "Biochemistry 🧪",
+           lectures: { 1: "Protein Metabolism", ... },
+           yearFiles: [ "IBS_End-Block_2018-2019.html", ... ]   // order = order of the year filter
+       };
+       A year file that does not exist yet (or cannot be loaded) is simply skipped, with no warning, so every subject file can list all years now.
+       The year name comes from the  year: "..."  line of each year file; only years that have at least one
+       question of this subject appear in the filter, and only lectures used by the selected year are listed.
+
    Needs the pages to be opened through a web server / hosting (not by double-clicking the file).
    ===================================================================== */
-(function linkedYearLoader() {
+(function linkedPageLoader() {
     const cfg = window.QUIZ_CONFIG;
-    if (!cfg || !Array.isArray(cfg.sources)) return;
+    if (!cfg) return;
+    const isYearPage    = Array.isArray(cfg.subjectFiles);
+    const isSubjectPage = !isYearPage && !!cfg.subject && Array.isArray(cfg.yearFiles);
+    if (!isYearPage && !isSubjectPage) return;
     const errors = window.__QUIZ_LINK_ERRORS = [];
     const norm = t => String(t == null ? '' : t).replace(/[\u2013\u2014]/g, '-').replace(/\s+/g, ' ').trim().toLowerCase();
-    const wanted = norm(cfg.year);
+    const fileOf = src => typeof src === 'string' ? src : ((src && src.file) || '');
 
     function splitSubject(raw) {
         if (!raw) return null;
@@ -37,12 +49,14 @@
         const m = str.match(/^(.*?)\s*([^A-Za-z0-9\s()&,.\-\/'+][^]*)$/u);
         return { name: m ? m[1].trim() : str, emoji: m ? m[2].trim() : '' };
     }
-    function loadSubjectConfig(file) {
+    function subjectName(raw) { const s = splitSubject(raw); return s ? s.name : ''; }
+    function readConfig(file) {
         const xhr = new XMLHttpRequest();
         xhr.open('GET', encodeURI(file) + (file.indexOf('?') < 0 ? '?nocache=' + Date.now() : ''), false);   // synchronous on purpose: the page builds right after
-        xhr.send(null);
-        if (xhr.status && (xhr.status < 200 || xhr.status >= 300)) throw new Error('HTTP ' + xhr.status);
-        if (!xhr.responseText) throw new Error('empty response');
+        try { xhr.send(null); }
+        catch (err) { err.missing = true; throw err; }                // file not found / cannot be fetched (also what a missing file looks like when opened from disk)
+        if (xhr.status && (xhr.status < 200 || xhr.status >= 300)) { const e = new Error('HTTP ' + xhr.status); e.missing = true; throw e; }
+        if (!xhr.responseText) { const e = new Error('empty response'); e.missing = true; throw e; }
         const doc = new DOMParser().parseFromString(xhr.responseText, 'text/html');   // scripts are NOT executed here
         const script = Array.from(doc.querySelectorAll('script:not([src])')).find(sc => sc.textContent.indexOf('QUIZ_CONFIG') >= 0);
         if (!script) throw new Error('no QUIZ_CONFIG found in the file');
@@ -67,57 +81,82 @@
         return (h % 9000 + 1) * 100000;
     }
 
-    if (!wanted) errors.push('The page has no  year: "..."  line.');
-    const subjects = [], lecturesOut = {}, questions = [], knownYears = [];
-    let yearFound = false;
+    /* ---------- YEAR page: own questions, lectures / subject names come from the subject files ---------- */
+    if (isYearPage) {
+        const subs = [];
+        cfg.subjectFiles.forEach(src => {
+            const file = fileOf(src);
+            if (!file) return;
+            try {
+                const f = readConfig(file);
+                const s = splitSubject(f.subject) || { name: file, emoji: '' };
+                subs.push({ name: s.name || file, emoji: s.emoji, lectures: lectureMap(f, s.name) });
+            } catch (e) {
+                errors.push('Could not load "' + file + '" (' + e.message + '). Check the file name, and open the page through a web server, not directly from disk.');
+            }
+        });
+        const order = new Map(subs.map((s, i) => [norm(s.name), i]));
+        const seen = new Set(), mine = [];
+        (cfg.questions || []).forEach(q => {
+            if (!subs.length) return;                                 // the subject files failed; that error is already shown
+            const idx = order.get(norm(subjectName(q.s)));
+            if (idx === undefined) { errors.push('Question n=' + q.n + ' has subject "' + q.s + '", which matches none of the subject files.'); return; }
+            if (!isFinite(Number(q.n))) { errors.push('A ' + subs[idx].name + ' question has no valid number "n".'); return; }
+            const key = idx + '|' + Number(q.n);
+            if (seen.has(key)) errors.push('Number ' + q.n + ' is used twice for ' + subs[idx].name + ' in this year file.');
+            seen.add(key);
+            mine.push({ idx, item: Object.assign({}, q, { s: subs[idx].name, srcN: q.n, n: offsetFor(subs[idx].name) + Number(q.n) }) });
+        });
+        mine.sort((a, b) => a.idx - b.idx);                           // grouped by subject, in the order of subjectFiles
+        const questions = mine.map(m => m.item);
+        const usedSubjects = new Set(questions.map(q => q.s));
+        const subjects = [], lecturesOut = {};
+        subs.forEach(s => {
+            if (!usedSubjects.has(s.name)) return;                    // no questions of this subject in this year
+            subjects.push({ name: s.name, emoji: s.emoji });
+            const used = new Set(questions.filter(q => q.s === s.name).map(q => String(q.l)));
+            lecturesOut[s.name] = Object.fromEntries(Object.entries(s.lectures).filter(([k]) => used.has(String(k))));
+        });
+        questions.forEach((q, i) => { q.num = i + 1; });              // numbers shown on this page: 1, 2, 3 ...
+        delete cfg.subject;
+        delete cfg.years;
+        cfg.questions = questions;
+        cfg.subjects  = subjects;
+        cfg.lectures  = lecturesOut;
+        return;
+    }
 
-    cfg.sources.forEach(src => {
-        const o = typeof src === 'string' ? { file: src } : (src || {});
-        if (!o.file) return;
+    /* ---------- SUBJECT page: own lectures, questions come from the year files ---------- */
+    const wantedName = subjectName(cfg.subject);
+    const years = [], questions = [];
+    cfg.yearFiles.forEach(src => {
+        const file = fileOf(src);
+        if (!file) return;
         let f;
-        try { f = loadSubjectConfig(o.file); }
+        try { f = readConfig(file); }
         catch (e) {
-            errors.push('Could not load "' + o.file + '" (' + e.message + '). Check the file name, and open the page through a web server, not directly from disk.');
+            if (e.missing) { console.info('[linked pages] year file not found, skipped: ' + file); return; }   // no red warning: that year just does not appear
+            errors.push('Could not load "' + file + '" (' + e.message + '). Check the file name, and open the page through a web server, not directly from disk.');
             return;
         }
-        const fromFile = splitSubject(f.subject) || { name: o.file, emoji: '' };
-        const name  = (o.name || fromFile.name || o.file).trim();
-        const emoji = o.emoji !== undefined ? o.emoji : fromFile.emoji;
-
-        const entry = (f.years || []).find(y => {
-            const label = String(y.year || y.name || y.label || '');
-            if (label) knownYears.push(label.trim());
-            return norm(label) === wanted;
-        });
-        if (!entry) return;                       // this subject has no questions in this year
-        yearFound = true;
-        const nums = parseNumberSet(entry.number != null ? entry.number : entry.numbers);
-        const base = offsetFor(name);
-        const mine = [];
+        const label = String(f.year || '').trim();
+        if (!label) { errors.push('"' + file + '" has no  year: "..."  line.'); return; }
+        const base = offsetFor(label);
+        const seen = new Set(), keys = [];
         (f.questions || []).forEach(q => {
-            if (!nums.has(Number(q.n))) return;
-            mine.push(Object.assign({}, q, { s: name, srcN: q.n, n: base + Number(q.n) }));
+            if (norm(subjectName(q.s)) !== norm(wantedName)) return;
+            if (!isFinite(Number(q.n))) { errors.push('A question in "' + file + '" has no valid number "n".'); return; }
+            if (seen.has(Number(q.n))) errors.push('Number ' + q.n + ' is used twice for ' + wantedName + ' in "' + file + '".');
+            seen.add(Number(q.n));
+            const key = base + Number(q.n);
+            keys.push(key);
+            questions.push(Object.assign({}, q, { s: wantedName, srcN: q.n, n: key }));
         });
-        const missing = [...nums].filter(n => !(f.questions || []).some(q => Number(q.n) === n));
-        if (missing.length) console.warn('[' + name + '] listed for "' + cfg.year + '" but no such question yet: ' + missing.join(', '));
-        if (!mine.length) return;
-
-        subjects.push({ name, emoji });
-        const used = new Set(mine.map(q => String(q.l)));
-        const all = lectureMap(f, name);
-        lecturesOut[name] = Object.fromEntries(Object.entries(all).filter(([k]) => used.has(String(k))));
-        mine.forEach(q => questions.push(q));
+        if (keys.length) years.push({ year: label, number: keys });   // numbers are listed, so the year filter works unchanged
     });
-
-    if (wanted && !yearFound && !errors.length) {
-        errors.push('No subject file has a year named "' + cfg.year + '". Years found: ' + [...new Set(knownYears)].join(' | '));
-    }
-    questions.forEach((q, i) => { q.num = i + 1; });      // numbers shown on this page: 1, 2, 3 ...
-
-    delete cfg.subject;
+    questions.forEach((q, i) => { q.num = i + 1; });                  // numbers shown on this page: 1, 2, 3 ...
+    cfg.years = years;
     cfg.questions = questions;
-    cfg.subjects  = subjects;
-    cfg.lectures  = lecturesOut;
 })();
 
 const QUIZ = window.QUIZ_CONFIG || {};
