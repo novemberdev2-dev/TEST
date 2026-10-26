@@ -25,20 +25,21 @@ window.QUIZ_CONFIG = {
     // Selecting a year shows the year name as the title, and only the lectures used by that year's questions.
     // If "subject" is NOT written, this "years" block is ignored (the subjects filter is used).
     years: [
-       { year: "End-Block _ 2018-2019", number: "1-8" },
-      { year: "Final _ 2018-2019", number: "9-86" },
-         { year: "Final _ 2020-2021", number: "87-107" },
-         { year: "End-Block _ 2021-2022", number: "108-116" },
-          { year: "Final _ 2021-2022", number: "117-145" },
-          { year: "Final _ 2022-2023", number: "146-166,321" },
-          { year: "End-Block _ 2023-2024", number: "167-173" },
-          { year: "Final _ 2023-2024", number: "174-257" },
-          { year: "End-Block _ 2024-2025", number: "258-265" },
-          { year: "Final _ 2024-2025", number: "263-278" },
-          { year: "End-Block _ 2025-2026", number: "279-285" },
-          { year: "Final _ 2025-2026", number: "286-301" },
-          { year: "Quiz _ 2026-2027", number: "322-329" },
-          { year: "Quiz _ Unknown Year", number: "302-318" },
+       { year: "Pastpaper or Quiz _ 2017-2018", number: "1-107" },
+      { year: "Final _ 2018-2019", number: "108-154" },
+        { year: "Quiz _ 2018-2019", number: "155-174" },
+         { year: "Final _ 2020-2021", number: "175-194" },
+         { year: "End-Block _ 2021-2022", number: "195-204" },
+          { year: "Final _ 2021-2022", number: "205-223" },
+          { year: "Final _ 2022-2023", number: "224-246" },
+          { year: "End-Block _ 2023-2024", number: "247-253" },
+          { year: "Final _ 2023-2024", number: "254-257" },
+          { year: "End-Block _ 2024-2025", number: "258-264, 298" },
+          { year: "Final _ 2024-2025", number: "265-277" },
+          { year: "End-Block _ 2025-2026", number: "278-284" },
+          { year: "Final _ 2025-2026", number: "285-297" },
+          { year: "Quiz _ 2026-2027", number: "299-305" },
+         
 
 
 
@@ -51,7 +52,7 @@ window.QUIZ_CONFIG = {
     // The same number can be reused in different subjects (matched by s + l).
     lectures: {
        
-       1: "Protein Metabolism 🥩",
+    1: "Protein Metabolism 🥩",
     2: "Lipid Metabolism 🥑",
     3: "Carbohydrate Metabolism 🍞",
     7: "Ketosis" ,
@@ -68,6 +69,565 @@ window.QUIZ_CONFIG = {
 
     questions: [
  
+   
+ { n: 1, s: "Biochemistry", l: 1, q: "Proteins contain all the following elements EXCEPT:", o: ["A. C", "B. H", "C. O", "D. N", "E. Se"], a: "E" },
+  { n: 2, s: "Biochemistry", l: 1, q: "Amino acids are bind together by:", o: ["A. Glycosidic bonds", "B. Hydrogen bonds", "C. Peptide bonds", "D. Amide bonds", "E. C&D are correct"], a: "E" },
+  { n: 3, s: "Biochemistry", l: 1, q: "Insulin is ________ protein.", o: ["A. Monomer", "B. Dimmer", "C. Trimmer", "D. Tetramer", "E. Pentamer"], a: "B" },
+  { n: 4, s: "Biochemistry", l: 1, q: "Pick up the function of HCl in stomach:", o: ["A. Cause denature of dietary proteins", "B. Cause hydrolysis of dietary proteins to amino acids", "C. Cause hydrolysis of starch", "D. Cause hydrolysis of triglycerides", "E. Stimulate absorption of amino acids"], a: "A" },
+  { n: 5, s: "Biochemistry", l: 1, q: "All the following compounds can be transport from intestinal lumen to intestinal mucosa EXCEPT:", o: ["A. Amino acids", "B. Tripeptides", "C. Pentapeptides", "D. Hexapeptides", "E. Decapeptides"], a: "E" },
+  { n: 6, s: "Biochemistry", l: 1, q: "All the following are source of pool amino acids EXCEPT:", o: ["A. Dietary proteins", "B. Dietary amino acids", "C. Liver synthesis of non essential amino acids", "D. Tissue regeneration", "E. Atmospheric nitrogen"], a: "E" },
+  { n: 7, s: "Biochemistry", l: 1, q: "Negative nitrogen balance occurs in:", o: ["A. Pregnancy", "B. Adults", "C. Illness", "D. Advanced cancer", "E. Surgery"], a: "A or D" },
+  { n: 8, s: "Biochemistry", l: 1, q: "All the following are true about collagen EXCEPT:", o: ["A. Water soluble", "B. Structural protein", "C. Fibrous protein", "D. Water insoluble", "E. Found in skin"], a: "A" },
+  { n: 9, s: "Biochemistry", l: 1, q: "All the following are true about hemoglobin EXCEPT:", o: ["A. Oligomeric protein", "B. Transporter of oxygen", "C. Complex protein", "D. Globular protein", "E. Poly peptides bind with glucose"], a: "E" },
+  { n: 10, s: "Biochemistry", l: 1, q: "Ceruloplasmin is transporter of:", o: ["A. Iron", "B. Zing", "C. Copper", "D. Selenium", "E. Magnesium"], a: "C" },
+  { n: 11, s: "Biochemistry", l: 1, q: "All the following are true about casein EXCEPT:", o: ["A. Found in milk", "B. Complete protein", "C. Store nutrient in milk", "D. Contain all essential amino acids", "E. Is a protein deficient of tryptophan"], a: "E" },
+  { n: 12, s: "Biochemistry", l: 1, q: "Tyrosine is:", o: ["A. Essential, aromatic, polar amino acid", "B. Non essential, aromatic, polar amino acid", "C. Essential, aromatic, polar and charged amino acid", "D. Essential, aliphatic, polar amino acid", "E. Non essential, aliphatic, polar amino acid"], a: "B" },
+  { n: 13, s: "Biochemistry", l: 1, q: "Biological value of protein depends on:", o: ["A. State of digestion", "B. State of absorption", "C. Its content of essential amino acids", "D. Animal proteins higher biological value than plant proteins", "E. All the above"], a: "C" },
+  { n: 14, s: "Biochemistry", l: 1, q: "Cysteine is:", o: ["A. Non polar amino acid", "B. Donor of methyl group", "C. Essential amino acid", "D. Containing hydroxyl group", "E. Polar, noncharged amino acid"], a: "E" },
+  { n: 15, s: "Biochemistry", l: 1, q: "Aspartic acid is:", o: ["A. Essential amino acid", "B. Non polar amino acid", "C. Only polar amino acid", "D. Net charge +1", "E. Polar and charged amino acid"], a: "E" },
+  { n: 16, s: "Biochemistry", l: 1, q: "One of the following amino acid containing immino (-NH-) group:", o: ["A. Tryptophan", "B. Tyrosine", "C. Proline", "D. Alanine", "E. Histidine"], a: "C" },
+  { n: 17, s: "Biochemistry", l: 1, q: "Pick up non building amino acid:", o: ["A. Tryptophan", "B. Tyrosine", "C. Proline", "D. Alanine", "E. Histidine"], a: "B" },
+  { n: 18, s: "Biochemistry", l: 1, q: "Human body depends on one of the following substance as nitrogen source:", o: ["A. Atmospheric nitrogen", "B. No2", "C. No3", "D. No", "E. Ammonia"], a: "E" },
+  { n: 19, s: "Biochemistry", l: 1, q: "Tyrosine synthesize by:", o: ["A. Amination of phenyl alaninine", "B. Deamination of phenyl alaninine", "C. Carboxylation of phenyl alaninine", "D. Decarboxylation of phenyl alaninine", "E. Hydroxylation of phenyl alaninine"], a: "E" },
+  { n: 20, s: "Biochemistry", l: 1, q: "Hyperammonemia type 2 caused by deficient of the enzyme:", o: ["A. Carbamoyl phosphate synthetase", "B. Ornithine transcarbamoylase", "C. Argininosuccinate synthetase", "D. Arginino succinase", "E. Argininase"], a: "B" },
+  { n: 21, s: "Biochemistry", l: 1, q: "All the following required for synthesis of glutamic acid EXCEPT:", o: ["A. Ammonia", "B. A-ketoglutarate", "C. The enzyme glutamate dehydrogenase", "D. The enzyme glutamate synthetase", "E. NADH"], a: "D" },
+  { n: 22, s: "Biochemistry", l: 1, q: "Conversion of aspartate to aspargin required:", o: ["A. Ammonia + ATP + aspartate", "B. Ammonia + ATP + a-ketoglutarate", "C. Ammonia + ATP + oxaloacetate", "D. Ammonia + NAD + aspartate", "E. Ammonia + NADH + aspartate"], a: "A" },
+  { n: 23, s: "Biochemistry", l: 1, q: "All the following are required for biosynthesis of tyrosine EXCEPT:", o: ["A. O2", "B. ATP", "C. NADH", "D. Phenyl alanine", "E. Phenyl alanine mono-oxygenase"], a: "B" },
+  { n: 24, s: "Biochemistry", l: 1, q: "Benzoic acid is toxic substance convert to nontoxic by conjugating with:", o: ["A. Tryptophan", "B. Tyrosine", "C. Proline", "D. Glycine", "E. Histidine"], a: "D" },
+  { n: 25, s: "Biochemistry", l: 1, q: "Glutathione is:", o: ["A. Amino acid", "B. Protein", "C. Polypeptide", "D. Tripeptide", "E. Disaccharide"], a: "D" },
+  { n: 26, s: "Biochemistry", l: 1, q: "All the following are derivative of tyrosine EXCEPT:", o: ["A. Catecholamins", "B. T3", "C. T4", "D. Melanin", "E. Choline"], a: "E" },
+  { n: 27, s: "Biochemistry", l: 1, q: "Amino acids can be catabolized by each of the following EXCEPT:", o: ["A. Oxidative deamination", "B. Oxidative amination", "C. Hydrolytic deamination", "D. Reductive deamination", "E. Transamination"], a: "B" },
+  { n: 28, s: "Biochemistry", l: 1, q: "Transamination is:", o: ["A. Catabolism reaction", "B. Anabolism reaction", "C. Required NADH", "D. Required FADH2", "E. Catabolism and anabolism reaction"], a: "E" },
+  { n: 29, s: "Biochemistry", l: 1, q: "Serotonin can be biosynthesis by:", o: ["A. Carboxylation of tryptophan", "B. Decarboxylation of tryptophan", "C. Hydroxylation of tryptophan", "D. Oxydation of tryptophan", "E. Hydroxylation and decarboxylation of tryptophan"], a: "E" },
+  { n: 30, s: "Biochemistry", l: 1, q: "Urea cycle:", o: ["A. Occur in kidney", "B. Occur in cytoplasm", "C. Occur in mitochondria", "D. Occur in cytoplasm and mitochondria", "E. Is a pathway to convert ammonia to uric acid"], a: "D" },
+  { n: 31, s: "Biochemistry", l: 1, q: "The first step of urea cycle required all the following EXCEPT:", o: ["A. Ammonia", "B. Co2", "C. Co", "D. ATP", "E. Carbamoyl phosphate synthetase"], a: "C" },
+  { n: 32, s: "Biochemistry", l: 1, q: "Glycinuria caused by:", o: ["A. Deficient of the enzyme glycine oxidase", "B. Deficient of the enzyme glycine dehydrogenase", "C. Deficient of the enzyme glycine deaminase", "D. Defect of glomerular filtration", "E. Defect of tubular transport and reabsorption"], a: "E" },
+  { n: 33, s: "Biochemistry", l: 1, q: "Keto acids from amino acids may convert to each of the following EXCEPT:", o: ["A. Glucose", "B. Acyl coa", "C. Creatine", "D. Oxaloacetate", "E. Amino acid"], a: "C" },
+  { n: 34, s: "Biochemistry", l: 1, q: "Phenylketonuria (PKU) is a genetic disease caused by deficiency of the enzyme:", o: ["A. Phenylalanine monooxygenase", "B. Phenylalanine dioxygenase", "C. Phenyl alanine dehydrogenase", "D. Phenylalanine deaminase", "E. Phenyl alanine decarboxylase"], a: "A" },
+  { n: 35, s: "Biochemistry", l: 1, q: "The disease caused by deficiency of homogentisate oxidase is:", o: ["A. Hartnup disease", "B. Alkaptanuria", "C. Citrullinemia", "D. Maple-syrup urine disease", "E. Homocysteinuria"], a: "B" },
+  { n: 36, s: "Biochemistry", l: 1, q: "All proteins contain the:", o: ["A. Same 20 amino acids in different sequence and numbers", "B. Different amino acids", "C. 200 amino acids occurring in nature", "D. Only a few amino acids", "E. Different monosaccharides"], a: "A" },
+  { n: 37, s: "Biochemistry", l: 1, q: "Sulpher containing amino acid is:", o: ["A. Methionine", "B. Leucine", "C. Valine", "D. Aspargine", "E. Threonine"], a: "A" },
+  { n: 38, s: "Biochemistry", l: 1, q: "An aromatic amino acid is:", o: ["A. Cysteine", "B. Arginine", "C. Tyrosine", "D. Taurine", "E. Isoleucine"], a: "C" },
+  { n: 39, s: "Biochemistry", l: 1, q: "Pepsinogen is converted to active pepsin by:", o: ["A. HCl", "B. Ca ions", "C. Bile acids", "D. Entrokinase", "E. Bile salts"], a: "A" },
+  { n: 40, s: "Biochemistry", l: 1, q: "Marasmus is a disease characterized by:", o: ["A. Deficiency of protein only", "B. Edema", "C. Decrease plasma albumin", "D. Anemia", "E. Mental retardation"], a: "D" },
+  { n: 41, s: "Biochemistry", l: 1, q: "A positive nitrogen balance occurs:", o: ["A. In growing infant", "B. Following surgery", "C. In advanced cancer", "D. In kwashiowkor", "E. In marasmus"], a: "A" },
+  { n: 42, s: "Biochemistry", l: 1, q: "Edemia is a major symptom of:", o: ["A. Kwashiowkor", "B. Marasmus", "C. Hartnup disease", "D. Alkaptanuria", "E. Hyperoxaluria"], a: "A" },
+  { n: 43, s: "Biochemistry", l: 1, q: "The site of urea synthesis is:", o: ["A. Liver", "B. Kidney", "C. Skin", "D. Intestine", "E. Spleen"], a: "A" },
+  { n: 44, s: "Biochemistry", l: 1, q: "The enzymes of urea synthesis are found in:", o: ["A. Mitochondria only", "B. Cytosol only", "C. Both mitochondria and cytosol", "D. Nucleus", "E. Ribosomes"], a: "C" },
+  { n: 45, s: "Biochemistry", l: 1, q: "A compound serving a link between citric acid cycle and urea cycle is:", o: ["A. Malate", "B. Citrate", "C. Fumarate", "D. Succinate", "E. Oxaloacetate"], a: "A or C" },
+  { n: 46, s: "Biochemistry", l: 1, q: "The 2 nitrogen atoms in urea are contributed by:", o: ["A. Ammonia and glutamate", "B. Glutamate and glutamine", "C. Ammonia and aspartate", "D. Ammonia and alanine", "E. Ammonia and aspargin"], a: "C" },
+  { n: 47, s: "Biochemistry", l: 1, q: "Tryptophan could be considered as precursor of:", o: ["A. Serotonin", "B. Thyroid hormones", "C. Histamine", "D. Tyrosine", "E. Valine"], a: "A" },
+  { n: 48, s: "Biochemistry", l: 1, q: "The amino acid which detoxicated benzoic acid to form hippuric acid is:", o: ["A. Glycine", "B. Arginine", "C. Alanine", "D. Aspartic acid", "E. Aspargin"], a: "A" },
+  { n: 49, s: "Biochemistry", l: 1, q: "Two amino groups are present in:", o: ["A. Leucine", "B. Lycine", "C. Isoleucine", "D. Proline", "E. Aspartic acid"], a: "B" },
+  { n: 50, s: "Biochemistry", l: 1, q: "All the following are branched amino acids EXCEPT:", o: ["A. Valine", "B. Leucine", "C. Isoleucine", "D. Lycine"], a: "D" },
+  { n: 51, s: "Biochemistry", l: 1, q: "Alanine can be synthesized from:", o: ["A. Glutamate and a-ketogltarate", "B. Pyruvate and a-ketogltarate", "C. Pyruvate and glutamate", "D. Aspartate and a-ketogltarate", "E. Ammonia and oxaloacetate"], a: "A or C" },
+  { n: 52, s: "Biochemistry", l: 1, q: "All the following are required for synthesis of aspartate by transamination EXCEPT:", o: ["A. Oxalo acetate", "B. A-keto glutarate", "C. Glutamate", "D. Pyridoxal phosphate", "E. Aspartate transaminase"], a: "B or D" },
+  { n: 53, s: "Biochemistry", l: 1, q: "All the following are required for synthesis of glutamine EXCEPT:", o: ["A. Glutamate", "B. Ammonia", "C. Pyridoxal phosphate", "D. ATP", "E. Glutamine synthetase"], a: "C" },
+  { n: 54, s: "Biochemistry", l: 1, q: "All the following amino acids are non-building proteins EXCEPT:", o: ["A. Ornithine", "B. Citrulline", "C. 5-hydroxyl tryptophan", "D. Histamine", "E. Lysine"], a: "E" },
+  { n: 55, s: "Biochemistry", l: 1, q: "Carbamoyl phosphate required for urea synthesis is formed in:", o: ["A. Cytosol", "B. Mitochondria", "C. Ribosome", "D. Nucleus", "E. Golgi apparatus"], a: "B" },
+  { n: 56, s: "Biochemistry", l: 1, q: "The following enzymes of urea cycle are present in cytosol:", o: ["A. Argenino succinic acid synthetase", "B. Argininosuccinase", "C. Carbamoyl phosphate synthetase", "D. Both A and B", "E. Neither A nor B"], a: "D" },
+  { n: 57, s: "Biochemistry", l: 1, q: "ATP is required in the following reactions of urea cycle:", o: ["A. Synthesis of carbamoyl phosphate and citrulline", "B. Synthesis of citrullin and arginino succinate", "C. Synthesis of argininosuccinate and arginine", "D. Synthesis of and carbamoyl phosphate argininosuccinate", "E. Synthesis of carbamoyl phosphate and urea"], a: "D or E" },
+  { n: 58, s: "Biochemistry", l: 1, q: "Histamine is formed from histidine by:", o: ["A. Deamination", "B. Dehydrogenation", "C. Decarboxylation", "D. Carboxylation", "E. Amination"], a: "C" },
+  { n: 59, s: "Biochemistry", l: 1, q: "Branched chain amino acids are:", o: ["A. Cysteine and cystine", "B. Tyrosine and tryptophan", "C. Glycine and serine", "D. Valine and leucine", "E. Valine and alanine"], a: "D" },
+  { n: 60, s: "Biochemistry", l: 1, q: "Alpha antitrypsin is:", o: ["A. Protease inhibitor", "B. Inhibit elastase", "C. Inactivate by cigarette smoking", "D. Positive acute phase protein", "E. All the above"], a: "E" },
+  { n: 61, s: "Biochemistry", l: 1, q: "The amino acid containing hydroxyl group is:", o: ["A. Proline", "B. Threonine", "C. Glycine", "D. Tryptophan", "E. Phenyl alanine"], a: "B" },
+  { n: 62, s: "Biochemistry", l: 1, q: "The basic amino acid is:", o: ["A. Glycine", "B. Histidine", "C. Leucine", "D. Proline", "E. Aspargin"], a: "B" },
+  { n: 63, s: "Biochemistry", l: 1, q: "In humans amino group is detoxified in liver as:", o: ["A. Urea", "B. Creatinine", "C. Uric acid", "D. Uronic acid", "E. Ammonia"], a: "A or E" },
+  { n: 64, s: "Biochemistry", l: 1, q: "Pyruvic acid can be obtained by transamination of alanine with:", o: ["A. α keto glutarate", "B. Aceto acetic acid", "C. β Hydroxy butric acid", "D. Phosphoenol pyruvic acid", "E. Glutamate"], a: "A" },
+  { n: 65, s: "Biochemistry", l: 1, q: "Along with CO2, NH3, and ATP, the amino acid that is needed in urea cycle is:", o: ["A. Alanine", "B. Aspartate", "C. Isoleucine", "D. Glycine", "E. Glutamate"], a: "B" },
+  { n: 66, s: "Biochemistry", l: 1, q: "The transaminase activity needs the coenzyme:", o: ["A. ATP", "B. FAD", "C. NAD", "D. PLP", "E. NADH"], a: "D" },
+  { n: 67, s: "Biochemistry", l: 1, q: "Oxaloacetate is converted to aspartate by:", o: ["A. Reductase", "B. Oxidase", "C. Transaminase", "D. Catalase", "E. Hydroxylase"], a: "C" },
+  { n: 68, s: "Biochemistry", l: 1, q: "Which bond is present in the primary structure of protein?", o: ["A. Hydrogen bond", "B. Ester bond", "C. Peptide bond", "D. Sulfide bond", "E. Sulfur bond"], a: "C" },
+  { n: 69, s: "Biochemistry", l: 1, q: "All the following statements about oculocutaneous albinism are correct EXCEPT:", o: ["A. Tyrosine hydroxylase is absent or deficient in melanocytes", "B. Skin is hypopigmented", "C. It results in mental retardation", "D. Eyes are hypopigmented", "E. Missing of melanin"], a: "C" },
+  { n: 70, s: "Biochemistry", l: 1, q: "Glycine is not required for the formation of:", o: ["A. Heme", "B. Creatine", "C. Purines", "D. Pyrimidines", "E. Glutathione"], a: "D" },
+  { n: 71, s: "Biochemistry", l: 1, q: "Serotonin is synthesized from:", o: ["A. Serine", "B. Phenylalanine", "C. Tyrosine", "D. Tryptophan", "E. Threonine"], a: "D" },
+  { n: 72, s: "Biochemistry", l: 1, q: "Synthesis of glutamine is accompanied by the hydrolysis of:", o: ["A. ATP", "B. ADP", "C. TPP", "D. Creatinephosphate", "E. NADPH"], a: "A" },
+  { n: 73, s: "Biochemistry", l: 1, q: "Accumulation of tryptophan in blood is known as:", o: ["A. Pompes disease", "B. Wilsons disease", "C. Wolmans disease", "D. Hartnups disease", "E. Albinism"], a: "D" },
+  { n: 74, s: "Biochemistry", l: 1, q: "All the following are transport proteins EXCEPT:", o: ["A. Hemoglobin", "B. Myoglobin", "C. Transferring", "D. Ceruloplasmin", "E. Elastin"], a: "E" },
+  { n: 75, s: "Biochemistry", l: 1, q: "The number of ATPs consumed in the urea cycle is:", o: ["A. 1", "B. 2", "C. 3", "D. 4", "E. 5"], a: "C" },
+  { n: 76, s: "Biochemistry", l: 1, q: "Urea has two nitrogen atoms from:", o: ["A. Ammonia + aspartic acid", "B. Ammonia + aspargin", "C. Ammonia + ornithine", "D. Ammonia + citrullin", "E. Ammonia + glutiamic acid"], a: "A" },
+  { n: 77, s: "Biochemistry", l: 1, q: "The side compound produce in urea cycle is:", o: ["A. Fumarate", "B. Malate", "C. Oxalate", "D. Citrate", "E. Acetate"], a: "A" },
+  
+{ n: 78, s: "Biochemistry", l: 1, q: "Deficiency of the enzyme alpha antitrypsin cause:", o: ["A. Hyperammonemia type 1", "B. Citrullinemia", "C. Alkaptonuria", "D. Tyrosinosis", "E. Tyrosinemia", "F. Albinism", "G. Hartnups disease", "H. Branched chain ketonuria", "I. Phenyl ketonuria", "J. Homocystinuria", "K. Kwashiorkor", "L. Marasmus", "M. Emphysema", "N. Nephritis", "O. Diabetes mellitus"], a: "M" },
+{ n: 79, s: "Biochemistry", l: 1, q: "Edema is the most important symptom of:", o: ["A. Hyperammonemia type 1", "B. Citrullinemia", "C. Alkaptonuria", "D. Tyrosinosis", "E. Tyrosinemia", "F. Albinism", "G. Hartnups disease", "H. Branched chain ketonuria", "I. Phenyl ketonuria", "J. Homocystinuria", "K. Kwashiorkor", "L. Marasmus", "M. Emphysema", "N. Nephritis", "O. Diabetes mellitus"], a: "K" },
+{ n: 80, s: "Biochemistry", l: 1, q: "Deficiency of the enzyme cystathione synthase cause:", o: ["A. Hyperammonemia type 1", "B. Citrullinemia", "C. Alkaptonuria", "D. Tyrosinosis", "E. Tyrosinemia", "F. Albinism", "G. Hartnups disease", "H. Branched chain ketonuria", "I. Phenyl ketonuria", "J. Homocystinuria", "K. Kwashiorkor", "L. Marasmus", "M. Emphysema", "N. Nephritis", "O. Diabetes mellitus"], a: "J" },
+{ n: 81, s: "Biochemistry", l: 1, q: "Burnt sugar is a symptom of:", o: ["A. Hyperammonemia type 1", "B. Citrullinemia", "C. Alkaptonuria", "D. Tyrosinosis", "E. Tyrosinemia", "F. Albinism", "G. Hartnups disease", "H. Branched chain ketonuria", "I. Phenyl ketonuria", "J. Homocystinuria", "K. Kwashiorkor", "L. Marasmus", "M. Emphysema", "N. Nephritis", "O. Diabetes mellitus"], a: "H" },
+{ n: 82, s: "Biochemistry", l: 1, q: "Deficiency of the enzyme tryptophan dioxygenase cause:", o: ["A. Hyperammonemia type 1", "B. Citrullinemia", "C. Alkaptonuria", "D. Tyrosinosis", "E. Tyrosinemia", "F. Albinism", "G. Hartnups disease", "H. Branched chain ketonuria", "I. Phenyl ketonuria", "J. Homocystinuria", "K. Kwashiorkor", "L. Marasmus", "M. Emphysema", "N. Nephritis", "O. Diabetes mellitus"], a: "G" },
+{ n: 83, s: "Biochemistry", l: 1, q: "Deficiency of the enzyme tyrosine hydroxylase cause:", o: ["A. Hyperammonemia type 1", "B. Citrullinemia", "C. Alkaptonuria", "D. Tyrosinosis", "E. Tyrosinemia", "F. Albinism", "G. Hartnups disease", "H. Branched chain ketonuria", "I. Phenyl ketonuria", "J. Homocystinuria", "K. Kwashiorkor", "L. Marasmus", "M. Emphysema", "N. Nephritis", "O. Diabetes mellitus"], a: "F" },
+{ n: 84, s: "Biochemistry", l: 1, q: "Deficiency of the enzyme homogentisate oxidase cause:", o: ["A. Hyperammonemia type 1", "B. Citrullinemia", "C. Alkaptonuria", "D. Tyrosinosis", "E. Tyrosinemia", "F. Albinism", "G. Hartnups disease", "H. Branched chain ketonuria", "I. Phenyl ketonuria", "J. Homocystinuria", "K. Kwashiorkor", "L. Marasmus", "M. Emphysema", "N. Nephritis", "O. Diabetes mellitus"], a: "C" },
+{ n: 85, s: "Biochemistry", l: 1, q: "Deficiency of the enzyme phenyl alanine monooxygenase cause:", o: ["A. Hyperammonemia type 1", "B. Citrullinemia", "C. Alkaptonuria", "D. Tyrosinosis", "E. Tyrosinemia", "F. Albinism", "G. Hartnups disease", "H. Branched chain ketonuria", "I. Phenyl ketonuria", "J. Homocystinuria", "K. Kwashiorkor", "L. Marasmus", "M. Emphysema", "N. Nephritis", "O. Diabetes mellitus"], a: "I" },
+{ n: 86, s: "Biochemistry", l: 1, q: "Deficiency of the enzyme arginosuccinate synthetase cause:", o: ["A. Hyperammonemia type 1", "B. Citrullinemia", "C. Alkaptonuria", "D. Tyrosinosis", "E. Tyrosinemia", "F. Albinism", "G. Hartnups disease", "H. Branched chain ketonuria", "I. Phenyl ketonuria", "J. Homocystinuria", "K. Kwashiorkor", "L. Marasmus", "M. Emphysema", "N. Nephritis", "O. Diabetes mellitus"], a: "B" },
+{ n: 87, s: "Biochemistry", l: 1, q: "Deficiency of the enzyme carbamoyl phosphate synthetase cause:", o: ["A. Hyperammonemia type 1", "B. Citrullinemia", "C. Alkaptonuria", "D. Tyrosinosis", "E. Tyrosinemia", "F. Albinism", "G. Hartnups disease", "H. Branched chain ketonuria", "I. Phenyl ketonuria", "J. Homocystinuria", "K. Kwashiorkor", "L. Marasmus", "M. Emphysema", "N. Nephritis", "O. Diabetes mellitus"], a: "A" },
+{ n: 88, s: "Biochemistry", l: 1, q: "____________ is required for biosynthesis of asparagine.", o: ["A. NADH", "B. ATP", "C. PLP", "D. O2", "E. Aspartate", "F. Glutamate", "G. Cysteine", "H. Methionine", "I. Tyrosine", "J. Lactate", "K. Glycine", "L. Serotonin", "M. Serine", "N. Tryptophan", "O. Proline"], a: "B" },
+{ n: 89, s: "Biochemistry", l: 1, q: "____________ is required for biosynthesis of glutamate.", o: ["A. NADH", "B. ATP", "C. PLP", "D. O2", "E. Aspartate", "F. Glutamate", "G. Cysteine", "H. Methionine", "I. Tyrosine", "J. Lactate", "K. Glycine", "L. Serotonin", "M. Serine", "N. Tryptophan", "O. Proline"], a: "A" },
+{ n: 90, s: "Biochemistry", l: 1, q: "____________ is required for biosynthesis of tyrosine.", o: ["A. NADH", "B. ATP", "C. PLP", "D. O2", "E. Aspartate", "F. Glutamate", "G. Cysteine", "H. Methionine", "I. Tyrosine", "J. Lactate", "K. Glycine", "L. Serotonin", "M. Serine", "N. Tryptophan", "O. Proline"], a: "A" },
+{ n: 91, s: "Biochemistry", l: 1, q: "____________ is required for biosynthesis of alanine by transamination.", o: ["A. NADH", "B. ATP", "C. PLP", "D. O2", "E. Aspartate", "F. Glutamate", "G. Cysteine", "H. Methionine", "I. Tyrosine", "J. Lactate", "K. Glycine", "L. Serotonin", "M. Serine", "N. Tryptophan", "O. Proline"], a: "C" },
+{ n: 92, s: "Biochemistry", l: 1, q: "____________ is universal amino group donor.", o: ["A. NADH", "B. ATP", "C. PLP", "D. O2", "E. Aspartate", "F. Glutamate", "G. Cysteine", "H. Methionine", "I. Tyrosine", "J. Lactate", "K. Glycine", "L. Serotonin", "M. Serine", "N. Tryptophan", "O. Proline"], a: "F" },
+{ n: 93, s: "Biochemistry", l: 1, q: "____________ conjugate with benzoic acid.", o: ["A. NADH", "B. ATP", "C. PLP", "D. O2", "E. Aspartate", "F. Glutamate", "G. Cysteine", "H. Methionine", "I. Tyrosine", "J. Lactate", "K. Glycine", "L. Serotonin", "M. Serine", "N. Tryptophan", "O. Proline"], a: "K" },
+{ n: 94, s: "Biochemistry", l: 1, q: "____________ use for biosynthesis of purine and pyrimidine bases.", o: ["A. NADH", "B. ATP", "C. PLP", "D. O2", "E. Aspartate", "F. Glutamate", "G. Cysteine", "H. Methionine", "I. Tyrosine", "J. Lactate", "K. Glycine", "L. Serotonin", "M. Serine", "N. Tryptophan", "O. Proline"], a: "M" },
+{ n: 95, s: "Biochemistry", l: 1, q: "____________ is most important component of glutathione.", o: ["A. NADH", "B. ATP", "C. PLP", "D. O2", "E. Aspartate", "F. Glutamate", "G. Cysteine", "H. Methionine", "I. Tyrosine", "J. Lactate", "K. Glycine", "L. Serotonin", "M. Serine", "N. Tryptophan", "O. Proline"], a: "K" },
+{ n: 96, s: "Biochemistry", l: 1, q: "____________ is precursor of thyroid hormones.", o: ["A. NADH", "B. ATP", "C. PLP", "D. O2", "E. Aspartate", "F. Glutamate", "G. Cysteine", "H. Methionine", "I. Tyrosine", "J. Lactate", "K. Glycine", "L. Serotonin", "M. Serine", "N. Tryptophan", "O. Proline"], a: "I" },
+{ n: 97, s: "Biochemistry", l: 1, q: "____________ is precursor of serotonin.", o: ["A. NADH", "B. ATP", "C. PLP", "D. O2", "E. Aspartate", "F. Glutamate", "G. Cysteine", "H. Methionine", "I. Tyrosine", "J. Lactate", "K. Glycine", "L. Serotonin", "M. Serine", "N. Tryptophan", "O. Proline"], a: "N" },
+{ n: 98, s: "Biochemistry", l: 1, q: "____________ is complex, globular, oligomeric, and water soluble protein.", o: ["A. Insulin", "B. Glucagon", "C. Myoglobin", "D. Collagen", "E. Phenyl-alanine", "F. Selenoprotein P", "G. Myosin", "H. Tyrosine", "I. Peptone", "J. Cysteine", "K. Methionine", "L. Pyruvate", "M. Lactate", "N. Oxaloacetate", "O. Citrulline", "P. Proline"], a: "C" },
+{ n: 99, s: "Biochemistry", l: 1, q: "____________ is nonessential, aromatic polar amino acid.", o: ["A. Insulin", "B. Glucagon", "C. Myoglobin", "D. Collagen", "E. Phenyl-alanine", "F. Selenoprotein P", "G. Myosin", "H. Tyrosine", "I. Peptone", "J. Cysteine", "K. Methionine", "L. Pyruvate", "M. Lactate", "N. Oxaloacetate", "O. Citrulline", "P. Proline"], a: "H" },
+{ n: 100, s: "Biochemistry", l: 1, q: "____________ is a derived protein.", o: ["A. Insulin", "B. Glucagon", "C. Myoglobin", "D. Collagen", "E. Phenyl-alanine", "F. Selenoprotein P", "G. Myosin", "H. Tyrosine", "I. Peptone", "J. Cysteine", "K. Methionine", "L. Pyruvate", "M. Lactate", "N. Oxaloacetate", "O. Citrulline", "P. Proline"], a: "F" },
+{ n: 101, s: "Biochemistry", l: 1, q: "____________ is polar, nonessential, containing sulfur amino acid.", o: ["A. Insulin", "B. Glucagon", "C. Myoglobin", "D. Collagen", "E. Phenyl-alanine", "F. Selenoprotein P", "G. Myosin", "H. Tyrosine", "I. Peptone", "J. Cysteine", "K. Methionine", "L. Pyruvate", "M. Lactate", "N. Oxaloacetate", "O. Citrulline", "P. Proline"], a: "J" },
+{ n: 102, s: "Biochemistry", l: 1, q: "____________ is a keto acid which corresponding of aspartate.", o: ["A. Insulin", "B. Glucagon", "C. Myoglobin", "D. Collagen", "E. Phenyl-alanine", "F. Selenoprotein P", "G. Myosin", "H. Tyrosine", "I. Peptone", "J. Cysteine", "K. Methionine", "L. Pyruvate", "M. Lactate", "N. Oxaloacetate", "O. Citrulline", "P. Proline"], a: "N" },
+{ n: 103, s: "Biochemistry", l: 1, q: "____________ is a complex protein act as antioxidant.", o: ["A. Insulin", "B. Glucagon", "C. Myoglobin", "D. Collagen", "E. Phenyl-alanine", "F. Selenoprotein P", "G. Myosin", "H. Tyrosine", "I. Peptone", "J. Cysteine", "K. Methionine", "L. Pyruvate", "M. Lactate", "N. Oxaloacetate", "O. Citrulline", "P. Proline"], a: "O" },
+{ n: 104, s: "Biochemistry", l: 1, q: "____________ is nonbuilding protein.", o: ["A. Insulin", "B. Glucagon", "C. Myoglobin", "D. Collagen", "E. Phenyl-alanine", "F. Selenoprotein P", "G. Myosin", "H. Tyrosine", "I. Peptone", "J. Cysteine", "K. Methionine", "L. Pyruvate", "M. Lactate", "N. Oxaloacetate", "O. Citrulline", "P. Proline"], a: "D" },
+{ n: 105, s: "Biochemistry", l: 1, q: "____________ is containing amino group.", o: ["A. Insulin", "B. Glucagon", "C. Myoglobin", "D. Collagen", "E. Phenyl-alanine", "F. Selenoprotein P", "G. Myosin", "H. Tyrosine", "I. Peptone", "J. Cysteine", "K. Methionine", "L. Pyruvate", "M. Lactate", "N. Oxaloacetate", "O. Citrulline", "P. Proline"], a: "P" },
+{ n: 106, s: "Biochemistry", l: 1, q: "____________ is a globular, oligomeric, and water soluble protein, and act as hormone.", o: ["A. Insulin", "B. Glucagon", "C. Myoglobin", "D. Collagen", "E. Phenyl-alanine", "F. Selenoprotein P", "G. Myosin", "H. Tyrosine", "I. Peptone", "J. Cysteine", "K. Methionine", "L. Pyruvate", "M. Lactate", "N. Oxaloacetate", "O. Citrulline", "P. Proline"], a: "B" },
+{ n: 107, s: "Biochemistry", l: 1, q: "____________ is a protein used for movement of muscles.", o: ["A. Insulin", "B. Glucagon", "C. Myoglobin", "D. Collagen", "E. Phenyl-alanine", "F. Selenoprotein P", "G. Myosin", "H. Tyrosine", "I. Peptone", "J. Cysteine", "K. Methionine", "L. Pyruvate", "M. Lactate", "N. Oxaloacetate", "O. Citrulline", "P. Proline"], a: "G" },
+
+
+{ n: 108, s: "Biochemistry", l: 1, q: "Deficiency of the enzyme alpha antitrypsin cause:", o: ["A. Hyperammonemia type 1", "B. Citrullinemia", "C. Alkaptonuria", "D. Tyrosinosis", "E. Tyrosinemia", "F. Albinism", "G. Hartnups disease", "H. Branched chain ketonuria", "I. Phenyl ketonuria", "J. Homocystinuria", "K. Kwashiorkor", "L. Marasmus", "M. Emphysema", "N. Nephritis", "O. Diabetes mellitus"], a: "M" },
+{ n: 109, s: "Biochemistry", l: 1, q: "Edema is the most important symptom of:", o: ["A. Hyperammonemia type 1", "B. Citrullinemia", "C. Alkaptonuria", "D. Tyrosinosis", "E. Tyrosinemia", "F. Albinism", "G. Hartnups disease", "H. Branched chain ketonuria", "I. Phenyl ketonuria", "J. Homocystinuria", "K. Kwashiorkor", "L. Marasmus", "M. Emphysema", "N. Nephritis", "O. Diabetes mellitus"], a: "K" },
+{ n: 110, s: "Biochemistry", l: 1, q: "Deficiency of the enzyme tryptophan dioxygenase cause:", o: ["A. Hyperammonemia type 1", "B. Citrullinemia", "C. Alkaptonuria", "D. Tyrosinosis", "E. Tyrosinemia", "F. Albinism", "G. Hartnups disease", "H. Branched chain ketonuria", "I. Phenyl ketonuria", "J. Homocystinuria", "K. Kwashiorkor", "L. Marasmus", "M. Emphysema", "N. Nephritis", "O. Diabetes mellitus"], a: "G" },
+{ n: 111, s: "Biochemistry", l: 1, q: "Deficiency of the enzyme phenyl alanine monooxygenase cause:", o: ["A. Hyperammonemia type 1", "B. Citrullinemia", "C. Alkaptonuria", "D. Tyrosinosis", "E. Tyrosinemia", "F. Albinism", "G. Hartnups disease", "H. Branched chain ketonuria", "I. Phenyl ketonuria", "J. Homocystinuria", "K. Kwashiorkor", "L. Marasmus", "M. Emphysema", "N. Nephritis", "O. Diabetes mellitus"], a: "I" },
+{ n: 112, s: "Biochemistry", l: 1, q: "Deficiency of the enzyme carbamoyl phosphate synthetase cause:", o: ["A. Hyperammonemia type 1", "B. Citrullinemia", "C. Alkaptonuria", "D. Tyrosinosis", "E. Tyrosinemia", "F. Albinism", "G. Hartnups disease", "H. Branched chain ketonuria", "I. Phenyl ketonuria", "J. Homocystinuria", "K. Kwashiorkor", "L. Marasmus", "M. Emphysema", "N. Nephritis", "O. Diabetes mellitus"], a: "A" },
+{ n: 113, s: "Biochemistry", l: 1, q: "____________ is non-essential, aromatic polar amino acid.", o: ["A. Insulin", "B. Glucagon", "C. Myoglobin", "D. Collagen", "E. Phenyl-alanine", "F. Selenoprotein P", "G. Myosin", "H. Tyrosine", "I. Peptone", "J. Cysteine", "K. Methionine", "L. Pyruvate", "M. Lactate", "N. Oxaloacetate", "O. Citrulline", "P. Proline"], a: "H" },
+{ n: 114, s: "Biochemistry", l: 1, q: "____________ is a derived protein.", o: ["A. Insulin", "B. Glucagon", "C. Myoglobin", "D. Collagen", "E. Phenyl-alanine", "F. Selenoprotein P", "G. Myosin", "H. Tyrosine", "I. Peptone", "J. Cysteine", "K. Methionine", "L. Pyruvate", "M. Lactate", "N. Oxaloacetate", "O. Citrulline", "P. Proline"], a: "F" },
+{ n: 115, s: "Biochemistry", l: 1, q: "____________ is polar, nonessential, containing sulfur amino acid.", o: ["A. Insulin", "B. Glucagon", "C. Myoglobin", "D. Collagen", "E. Phenyl-alanine", "F. Selenoprotein P", "G. Myosin", "H. Tyrosine", "I. Peptone", "J. Cysteine", "K. Methionine", "L. Pyruvate", "M. Lactate", "N. Oxaloacetate", "O. Citrulline", "P. Proline"], a: "J" },
+{ n: 116, s: "Biochemistry", l: 1, q: "____________ is a keto acid which corresponding of aspartate.", o: ["A. Insulin", "B. Glucagon", "C. Myoglobin", "D. Collagen", "E. Phenyl-alanine", "F. Selenoprotein P", "G. Myosin", "H. Tyrosine", "I. Peptone", "J. Cysteine", "K. Methionine", "L. Pyruvate", "M. Lactate", "N. Oxaloacetate", "O. Citrulline", "P. Proline"], a: "N" },
+{ n: 117, s: "Biochemistry", l: 1, q: "____________ is a protein used for movement of muscles.", o: ["A. Insulin", "B. Glucagon", "C. Myoglobin", "D. Collagen", "E. Phenyl-alanine", "F. Selenoprotein P", "G. Myosin", "H. Tyrosine", "I. Peptone", "J. Cysteine", "K. Methionine", "L. Pyruvate", "M. Lactate", "N. Oxaloacetate", "O. Citrulline", "P. Proline"], a: "G" },
+
+{ n: 118, s: "Biochemistry", l: 4, q: "If Emax changes and the slope shifts to the right, it indicates which type of inhibition?", o: ["A. Competitive inhibitor", "B. Non-competitive inhibitor", "C. Uncompetitive inhibitor", "D. Allosteric activator", "E. Suicide substrate"], a: "B" },
+  { n: 119, s: "Biochemistry", l: 4, q: "Pepsinogen is:", o: ["A. Apoenzyme", "B. Coenzyme", "C. Holoenzyme", "D. Pro-enzyme", "E. Metalloenzyme"], a: "D" },
+  { n: 120, s: "Biochemistry", l: 4, q: "Alpha-amylase is primarily increased in which condition?", o: ["A. Pancreatitis", "B. Myocardial infarction", "C. Hepatitis", "D. Renal failure", "E. Gout"], a: "A" },
+  { n: 121, s: "Biochemistry", l: 4, q: "Asparaginase is an enzyme used therapeutically to treat___________.", o: ["A. Diabetes mellitus", "B. Lymphoma", "C. Leukemia", "D. Hemophilia", "E. Hypertension"], a: "C" },
+  { n: 122, s: "Biochemistry", l: 4, q: "High concentrations of metals like Hg, Pb, Ag, and other toxins act as:", o: ["A. Competitive reversible", "B. Non-competitive irreversible", "C. Uncompetitive reversible", "D. Allosteric reversible", "E. Feedback competitive"], a: "B" },
+  { n: 123, s: "Biochemistry", l: 4, q: "The inhibition of the pathway converting FH2 to FH4 occurs via which mechanism?", o: ["A. Non-competitive inhibition", "B. Uncompetitive inhibition", "C. Competitive inhibition", "D. Allosteric activation", "E. Irreversible modification"], a: "C" },
+  { n: 124, s: "Biochemistry", l: 4, q: "Which of the following coenzymes is specifically responsible for transferring hydrogen atoms during metabolic reactions?", o: ["A. Coenzyme A", "B. Pyridoxal phosphate", "C. Thiamine pyrophosphate", "D. NAD", "E. Biotin"], a: "D" },
+  { n: 125, s: "Biochemistry", l: 4, q: "According to the Michaelis-Menten equation:", o: ["A. Vi = Vmax", "B. Vi = 2Vmax", "C. Vi = Km", "D. Vi = Vmax + Km", "E. Vi = 1/2 Vmax"], a: "E" },
+  { n: 126, s: "Biochemistry", l: 4, q: "What is a Holoenzyme composed of:", o: ["A. Protein portion only", "B. Protein and non-protein portion", "C. Non-protein portion only", "D. Apoenzyme only", "E. Coenzyme only"], a: "B" },
+  { n: 127, s: "Biochemistry", l: 4, q: "A coenzyme binds directly to the protein component of an enzyme, which is known as the:", o: ["A. Apoprotein", "B. Holoprotein", "C. Prosthetic group", "D. Active site", "E. Allosteric site"], a: "A" },
+  { n: 128, s: "Biochemistry", l: 4, q: "In the liver, alcohol is metabolized and changes into which toxic compound?", o: ["A. Formaldehyde", "B. Acetic acid", "C. Acetaldehyde", "D. Acetone", "E. Methanol"], a: "C" },
+  { n: 129, s: "Biochemistry", l: 4, q: "Lipase requires _______ ion to work effectively.", o: ["A. Mg", "B. Ca", "C. Zn", "D. Fe", "E. Mn"], a: "B" },
+  { n: 130, s: "Biochemistry", l: 4, q: "Fumarase, which converts fumarate to malate, belongs to which enzyme class?", o: ["A. Hydrolases", "B. Isomerases", "C. Ligases", "D. Lyases", "E. Oxidoreductases"], a: "D" },
+
+  { n: 131, s: "Biochemistry", l: 2, q: "LCAT (Lecithin-Cholesterol Acyltransferase) is primarily associated with which lipoprotein?", o: ["A. LDL", "B. HDL", "C. VLDL", "D. Chylomicrons", "E. IDL"], a: "B" },
+
+{ n: 132, s: "Biochemistry", l: 2, q: "Which enzyme is the rate-limiting enzyme in cholesterol synthesis?", o: ["A. HMG-CoA synthase", "B. HMG-CoA reductase", "C. Lipoprotein lipase", "D. ACAT", "E. LCAT"], a: "B" },
+
+{ n: 133, s: "Biochemistry", l: 2, q: "Which of the following is an omega-3 fatty acid?", o: ["A. Linoleic acid", "B. Arachidonic acid", "C. Linolenic acid", "D. Palmitic acid", "E. Oleic acid"], a: "C" },
+
+{ n: 134, s: "Biochemistry", l: 2, q: "What is the final product of fatty acid synthesis in the cytoplasm?", o: ["A. Stearic acid", "B. Oleic acid", "C. Palmitic acid", "D. Linoleic acid", "E. Arachidonic acid"], a: "C" },
+
+{ n: 135, s: "Biochemistry", l: 2, q: "Accumulation of phytanic acid is characteristic of which disease?", o: ["A. Tay-Sachs disease", "B. Refsum's disease", "C. Gaucher disease", "D. Niemann-Pick disease", "E. Fabry disease"], a: "B" },
+
+{ n: 136, s: "Biochemistry", l: 2, q: "How many ATP are produced from the complete oxidation of palmitate?", o: ["A. 106 ATP", "B. 108 ATP", "C. 127 ATP", "D. 129 ATP", "E. 131 ATP"], a: "D" },
+{ n: 137, s: "Biochemistry", l: 5, q: "Promotor:", o: ["A. Vinca alkaloid", "B. Hepatoma", "C. Saccharin", "D. Methotexate", "E. PAH"], a: "C" },
+{ n: 138, s: "Biochemistry", l: 5, q: "Antimetabolic:", o: ["A. Vinca alkaloid", "B. Hepatoma", "C. Saccharin", "D. Methotexate", "E. PAH"], a: "D" },
+{ n: 139, s: "Biochemistry", l: 5, q: "Antimitotic:", o: ["A. Vinca alkaloid", "B. Hepatoma", "C. Saccharin", "D. Methotexate", "E. PAH"], a: "A" },
+{ n: 140, s: "Biochemistry", l: 5, q: "Carcinoma:", o: ["A. Vinca alkaloid", "B. Hepatoma", "C. Saccharin", "D. Methotexate", "E. PAH"], a: "B" },
+{ n: 141, s: "Biochemistry", l: 5, q: "Indirectly causes cancer:", o: ["A. Vinca alkaloid", "B. Hepatoma", "C. Saccharin", "D. Methotexate", "E. PAH"], a: "E" },
+{ n: 142, s: "Biochemistry", l: 3, q: "Which of the following is correct regarding glycogen storage diseases?", o: ["A. Von Gierke disease is caused by acid maltase deficiency", "B. Pompe's disease is caused by acid maltase deficiency", "C. McArdle disease is caused by glucose-6-phosphatase deficiency", "D. Cori disease is caused by hexokinase deficiency", "E. Andersen disease is caused by pyruvate kinase deficiency"], a: "B" },
+
+{ n: 143, s: "Biochemistry", l: 3, q: "Which one of the following is true about insulin?", o: ["A. Stimulates glycogenolysis", "B. Increases blood glucose level", "C. Stimulates synthesis of triglycerides (TG)", "D. Stimulates gluconeogenesis", "E. Enhances lipolysis"], a: "C" },
+{ n: 144, s: "Biochemistry", l: 3, q: "Which metabolic process is stimulated by epinephrine (adrenaline)?", o: ["A. Glycogenesis", "B. Glycolysis", "C. Glycogenolysis", "D. Protein synthesis", "E. Cholesterol synthesis"], a: "C" },
+{ n: 145, s: "Biochemistry", l: 3, q: "Which of the following is a common symptom of hypoglycemia?", o: ["A. Polyuria", "B. Blurred vision", "C. Sweating", "D. Jaundice", "E. Weight gain"], a: "C" },
+{ n: 146, s: "Biochemistry", l: 3, q: "Hypothyroidism commonly results in which of the following?", o: ["A. Increased glucose utilization", "B. Decreased glucose utilization", "C. Increased glycogenolysis", "D. Increased lipolysis", "E. Increased gluconeogenesis"], a: "B" },
+{ n: 147, s: "Biochemistry", l: 3, q: "Which of the following is true about aerobic metabolism?", o: ["A. It occurs only in the cytoplasm", "B. It occurs in the mitochondria", "C. It does not require oxygen", "D. It produces lactate as the final product", "E. It yields only 2 ATP per glucose"], a: "B" },
+{ n: 148, s: "Biochemistry", l: 3, q: "Glucagon primarily stimulates which metabolic process?", o: ["A. Glycogenesis", "B. Glycolysis", "C. Glycogenolysis", "D. Lipogenesis", "E. Protein synthesis"], a: "C" },
+{ n: 149, s: "Biochemistry", l: 3, q: "Gluconeogenesis is best defined as:", o: ["A. Breakdown of glycogen to glucose", "B. Conversion of glucose into glycogen", "C. Production of glucose from non-carbohydrate sources", "D. Oxidation of glucose to pyruvate", "E. Conversion of glucose to triglycerides"], a: "C" },
+{ n: 150, s: "Biochemistry", l: 6, q: "Which of the following is true about MyPlate?", o: ["A. It recommends avoiding all carbohydrates.", "B. It is a healthy reminder to build a balanced meal.", "C. It recommends consuming only protein-rich foods.", "D. It replaces the Recommended Dietary Allowance (RDA).", "E. It recommends eliminating dietary fats."], a: "B" },
+{ n: 151, s: "Biochemistry", l: 6, q: "Which of the following is a good source of carbohydrates?", o: ["A. Dried fruit", "B. Fish", "C. Eggs", "D. Cheese", "E. Chicken breast"], a: "A" },
+{ n: 152, s: "Biochemistry", l: 6, q: "Which of the following is true regarding the recommended dietary allowance of 18 mg/day of iron?", o: ["A. It is recommended for healthy adult males", "B. It is recommended for most healthy adult females", "C. It is recommended only for children", "D. It is recommended only during infancy", "E. It is recommended only for elderly males"], a: "B" },
+{ n: 153, s: "Biochemistry", l: 6, q: "What does Estimated Energy Requirement (EER) represent?", o: ["A.  The amount of energy needed to maintain basic bodily functions at rest", "B. The dietary energy intake predicted to maintain energy balance in healthy individuals", "C. The maximum amount of energy an individual can consume without gaining weight", "D. The energy expenditure associated with physical activity", "E. The energy produced during basal metabolism"], a: "B" },
+{ n: 154, s: "Biochemistry", l: 6, q: "A nutrient that can be produced by the body (Non-essential) is:", o: ["A. Vitamin C", "B. Linoleic acid", "C. Lysine", "D. Tryptophan", "E. Glucose"], a: "E" },
+
+ { "n": 155, "s": "Biochemistry", "l": 1, "q": "Ceruloplasmin in plasma transport:", "o": ["A. Cu", "B. Fe", "C. Mg", "D. Mn", "E. Zn"], "a": "A" },
+  { "n": 156, "s": "Biochemistry", "l": 1, "q": "All the following are required for biosynthesis of tyrosine except:", "o": ["A. Adenosine triphosphate (ATP)", "B. Oxygen", "C. Phenyl alanine", "D. Phenyl alanine monooxygease", "E. NADH"], "a": "A" },
+  { "n": 157, "s": "Biochemistry", "l": 1, "q": "Serotonin is a neurotransmitter synthesis from:", "o": ["A. Alanine", "B. Glycine", "C. Lysine", "D. Tryptophan", "E. Valine"], "a": "D" },
+  { "n": 158, "s": "Biochemistry", "l": 1, "q": "Citrullinemia is a genetic disease caused by deficiency:", "o": ["A. Arginase", "B. Arginine succinase", "C. Argininosuccinate synthetase", "D. Carbamoyl phoaphate synthetase", "E. Ornithine transcarbamoylase"], "a": "C" },
+  { "n": 159, "s": "Biochemistry", "l": 1, "q": "Increasing the level of serum acetaldyde due to deficient of acetaldehyde dehydrogenase in:", "o": ["A. Cell membrane", "B. Cytoplasm", "C. Lysosomes", "D. Mitochondria", "E. Peroxisomes"], "a": "D" },
+  { "n": 160, "s": "Biochemistry", "l": 1, "q": "Amino acids are linked together by:", "o": ["A. hydrogen bonds", "B. hydrophobic bonds", "C. glycosidic bonds", "D. peptide bonds", "E. vander vales bonds"], "a": "D" },
+  { "n": 161, "s": "Biochemistry", "l": 1, "q": "Positive nitrogen balance required in some conditions such as:", "o": ["A. advanced cancer", "B. illness", "C. pregnancy", "D. protein deficiency", "E. starvation"], "a": "C" },
+  { "n": 162, "s": "Biochemistry", "l": 1, "q": "One of the following is basic, essential amino acid:", "o": ["A. Leucine", "B. Lysine", "C. Methionine", "D. Tryptophan", "E. Valine"], "a": "B" },
+  { "n": 163, "s": "Biochemistry", "l": 1, "q": "All the following are required for biosynthesis of glutamate except:", "o": ["A. Adenosine triphosphate (ATP)", "B. Alpha ketoglutarate", "C. Ammonia", "D. Glutamate dehydrogenase", "E. NADH"], "a": "A" },
+  { "n": 164, "s": "Biochemistry", "l": 1, "q": "Enzymes are biocatalysts increase the rate of reaction by:", "o": ["A. Increasing concentration of substrates", "B. Increasing concentration of enzymes", "C. Increasing the level of reactant energy", "D. Increasing the level of product energy", "E. Decreasing the activation energy"], "a": "E" },
+  { "n": 165, "s": "Biochemistry", "l": 2, "q": "Acetyl-CoA for fatty acid synthesis is generated in the cytosol by:", "o": ["A. Acetyl-CoA synthase", "B. ATP-citrate lyase", "C. Carnitine-acyl transferase", "D. Thiolase", "E. Hexokinase"], "a": "B" },
+  { "n": 166, "s": "Biochemistry", "l": 2, "q": "The energy yield from complete oxidation of palmitoleic acid will be:", "o": ["A. 126 ATP", "B. 129 ATP", "C. 131 ATP", "D. 127 ATP", "E. 133 ATP"], "a": "D" },
+  { "n": 167, "s": "Biochemistry", "l": 2, "q": "A rare inherited disorder in which phytanic acid accumulates in tissues, Possibly due to defect or deficiency of the α-hydroxylase:", "o": ["A. Von -Gierke's disease", "B. Refsum's Disease", "C. Xanthomatosis", "D. Dysbetalipoproteinemia", "E. Abetalipoproteinemia"], "a": "B" },
+  { "n": 168, "s": "Biochemistry", "l": 2, "q": "One of the following is omega-3- fatty:", "o": ["A. Oleic acid", "B. Myristic acid", "C. Linolenic acid", "D. Linoleic acid", "E. Arachidonic acid"], "a": "C" },
+  { "n": 169, "s": "Biochemistry", "l": 2, "q": "The remove of two carbon units from a fatty acyl CoA involves four sequential reaction which of the following best describes the reaction sequence:", "o": ["A. Oxidation, dehydration, oxidation, cleavage", "B. Reduction, dehydration, reduction, cleavage", "C. Hydrogenation, dehydration, hydrogenation, cleavage", "D. Dehydrogenation, hydration, dehydrogenation, cleavage", "E. Oxidation, dehydration, oxidation, hydration"], "a": "D" },
+  { "n": 170, "s": "Biochemistry", "l": 2, "q": "Free fatty acids are transported in the blood:", "o": ["A. Combined with albumin", "B. Combined with fatty acid binding protein", "C. Combined with β-lipoprotein", "D. In unbound free salts", "E. Combined with hormones"], "a": "A" },
+  { "n": 171, "s": "Biochemistry", "l": 2, "q": "TGs present in plasma lipoproteins can be hydrolyzed by:", "o": ["A. Hormone-sensitive lipase", "B. Pancreatic lipase", "C. Heparin", "D. Lipoprotein lipase", "E. Phospholipase"], "a": "D" },
+  { "n": 172, "s": "Biochemistry", "l": 2, "q": "Which of the following steps in the activation of fatty acid is thought to be rate controlling and locus of metabolic regulation?", "o": ["A. 3-hydroxy 3-methylglutaryl-CoA to mevalonic acid", "B. Squaline to TGs", "C. Squaline to lanosterol", "D. Lanosterol to cholesterol", "E. Squaline to cholesterol"], "a": "A" },
+  { "n": 173, "s": "Biochemistry", "l": 2, "q": "Oxidation of phytanic acid can not take place with out prior oxidation, which of the following statements best explains the requirement for α-oxidation?", "o": ["A. The β carbon is blocked by a methyl group", "B. Cannot activated by CoA prior to β-oxidation", "C. The chain length of pytanic acid is too long for the mitochondrial β-oxidation", "D. Require CoA intermediate", "E. The α-carbon is blocked by a methyl group"], "a": "A" },
+  { "n": 174, "s": "Biochemistry", "l": 2, "q": "Lipotropic factors like:", "o": ["A. Betaine", "B. Alcohol", "C. Acitic acid", "D. Cholesterol", "E. TGs"], "a": "A" },
+
+{ n: 175, s: "Biochemistry", l: 2, q: "Which of the following fatty acids is classified as an omega-9 fatty acid?", o: ["A. Linoleic acid", "B. Linolenic acid", "C. Arachidonic acid", "D. Palmitic acid", "E. Oleic acid"], a: "E" },
+{ n: 176, s: "Biochemistry", l: 1, q: "Lactoperoxidase in milk has bactericidal action as a:", o: ["A. Physical factor", "B. Mechanical factor", "C. Chemical factor", "D. Cellular factor", "E. Immunological factor"], a: "C" },
+{ n: 177, s: "Biochemistry", l: 3, q: "Gluconeogenesis can:", o: ["A. Synthesize glycogen from glucose", "B. Produce glucose from fatty acids only", "C. Resynthesize glucose from lactate after vigorous exercise", "D. Convert glucose into pyruvate", "E. Form ketone bodies"], a: "C" },
+{ n: 178, s: "Biochemistry", l: 1, q: "Alanine is formed from:", o: ["A. Glutamate and pyruvate", "B. Aspartate and oxaloacetate", "C. Glycine and serine", "D. Glucose and lactate", "E. Acetyl-CoA and pyruvate"], a: "A" },
+{ n: 179, s: "Biochemistry", l: 2, q: "The apolipoprotein present in chylomicrons is:", o: ["A. Apo A-I", "B. Apo B-48", "C. Apo B-100", "D. Apo C-II", "E. Apo E"], a: "B" },
+{ n: 180, s: "Biochemistry", l: 4, q: "Fumarase belongs to which enzyme class?", o: ["A. Oxidoreductase", "B. Transferase", "C. Hydrolase", "D. Lyase", "E. Ligase"], a: "D" },
+{ n: 181, s: "Biochemistry", l: 2, q: "Creatine kinase is a marker of:", o: ["A. Liver damage", "B. Skeletal muscle damage", "C. Kidney damage", "D. Pancreatic damage", "E. Bone disease"], a: "B" },
+{ n: 182, s: "Biochemistry", l: 1, q: "Isomers of amino acids have:", o: ["A. Different molecular weight", "B. Same molecular weight", "C. Different number of carbon atoms", "D. Same number of carbon atoms", "E. Different peptide bonds"], a: "B" },
+
+{ n: 184, s: "Biochemistry", l: 6, q: "The two groups that were renamed in MyPlate are:", o: ["A. Fruits and vegetables", "B. Grains and protein", "C. Meat and milk", "D. Oils and sweets", "E. Dairy and grains"], a: "C" },
+{ n: 185, s: "Biochemistry", l: 6, q: "MyPlate dietary guidelines are intended for:", o: ["A. Athletes only", "B. Healthy people", "C. Diabetic patients only", "D. Children under 2 years", "E. Pregnant women only"], a: "B" },
+{ n: 186, s: "Biochemistry", l: 6, q: "MyPlate is a:", o: ["A. Food pyramid", "B. Federal symbol", "C. Nutrition textbook", "D. Dietary supplement", "E. Weight-loss program"], a: "B" },
+
+{ n: 188, s: "Biochemistry", l: 5, q: "Promoter:", o: ["A. Saccharin", "B. Benzene", "C. Aflatoxin B1", "D. UV radiation", "E. Tobacco smoke"], a: "A" },
+{ n: 189, s: "Biochemistry", l: 2, q: "The role of carnitine is:", o: ["A. Glycolysis", "B. Intracellular transport of fatty acids", "C. Protein synthesis", "D. Cholesterol synthesis", "E. Urea formation"], a: "B" },
+{ n: 190, s: "Biochemistry", l: 1, q: "RNA is composed of:", o: ["A. A, T, G, C", "B. A, U, G, C", "C. A, U, T, C", "D. A, G, C", "E. A, T, U, G"], a: "B" },
+{ n: 191, s: "Biochemistry", l: 4, q: "Which of the following is an irreversible noncompetitive enzyme inhibitor?", o: ["A. Cyanide", "B. Mercury (Hg)", "C. Malonate", "D. Methotrexate", "E. Sulfonamide"], a: "B" },
+{ n: 192, s: "Biochemistry", l: 5, q: "Which of the following is a food preservative associated with carcinogenesis?", o: ["A. Benzoic acid", "B. Sorbic acid", "C. Methyl nitrosamine", "D. Citric acid", "E. Ascorbic acid"], a: "C" },
+{ n: 193, s: "Biochemistry", l: 4, q: "Which coenzyme carries amino groups during transamination?", o: ["A. FAD", "B. NAD+", "C. PLP", "D. Coenzyme A", "E. Biotin"], a: "C" },
+{ n: 194, s: "Biochemistry", l: 1, q: "cGMP acts primarily as a:", o: ["A. First messenger", "B. Structural protein", "C. Second messenger", "D. Enzyme inhibitor", "E. Hormone"], a: "C" },
+
+ { 
+    n: 195, 
+    s: "Biochemistry", 
+    l: 1, 
+    q: "Serotonin can be derived from tryptophan by these reactions:", 
+    o: ["A. Transamination, oxidation", "B. Methylation, deamination", "C. Acetylation, reduction", "D. Decarboxylation, hydroxylation", "E. Conjugation, condensation"], 
+    a: "D" 
+  },
+  { 
+    n: 196, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: "Omega 7 is:", 
+    o: ["A. Oleic acid", "B. Linoleic acid", "C. Palmitoleic acid", "D. Arachidonic acid", "E. Stearic acid"], 
+    a: "C" 
+  },
+  { 
+    n: 197, 
+    s: "Biochemistry", 
+    l: 1, 
+    q: "All of the following are required for synthesis of glutamate except:", 
+    o: ["A. Alpha-ketoglutarate", "B. Glutamate dehydrogenase", "C. Ammonia or amino group donor", "D. Glutamate synthetase", "E. NADPH or NADH"], 
+    a: "D" 
+  },
+  { 
+    n: 198, 
+    s: "Biochemistry", 
+    l: 1, 
+    q: "Which one is aliphatic, essential amino acid?", 
+    o: ["A. Leucine", "B. Glycine", "C. Tyrosine", "D. Glutamic acid", "E. Proline"], 
+    a: "A" 
+  },
+  { 
+    n: 199, 
+    s: "Biochemistry", 
+    l: 1, 
+    q: "Checkpoint control proteins like:", 
+    o: ["A. Hexokinase", "B. p53", "C. Collagen type I", "D. Albumin", "E. Hemoglobin A"], 
+    a: "B" 
+  },
+  { 
+    n: 200, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: "How many ATPs are produced in β oxidation of oleic acid (18:1)?", 
+    o: ["A. 120", "B. 129", "C. 144", "D. 146", "E. 144"], 
+    a: "E" 
+  },
+  { 
+    n: 201, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: "Which of the following apoproteins are coated in VLDL?", 
+    o: ["A. B48", "B. A1", "C. C1", "D. D", "E. B100"], 
+    a: "E" 
+  },
+  { 
+    n: 202, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: "Statins inhibit cholesterol accumulation by inhibiting:", 
+    o: ["A. Squalene synthase", "B. HMG coA reductase", "C. LDL receptors", "D. 7-alpha-hydroxylase", "E. Thiolase"], 
+    a: "B" 
+  },
+  { 
+    n: 203, 
+    s: "Biochemistry", 
+    l: 4, 
+    q: "Which of the following enzymes is a biomarker for biliary obstruction?", 
+    o: ["A. Gamma glutamyl transferase", "B. Amylase", "C. Creatine kinase", "D. Alanine aminotransferase", "E. Lactate dehydrogenase"], 
+    a: "A" 
+  },
+  { 
+    n: 204, 
+    s: "Biochemistry", 
+    l: 5, 
+    q: "Immunosuppressive carcinogen:", 
+    o: ["A. Vitamin C", "B. Glucose", "C. Penicillin", "D. Isoniazid", "E. Aspirin"], 
+    a: "D" 
+  },
+
+   { 
+    n: 205, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: " LCAT is an enzyme that is activated by which lipoprotein?", 
+    o: ["A. HDL", "B. LDL", "C. VLDL", "D. Chylomicrons", "E. IDL"], 
+    a: "A" 
+  },
+  { 
+    n: 206, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: "Linolenic fatty acid is:", 
+    o: ["A. Omega 6", "B. Omega 9", "C. Omega 3", "D. Saturated fat", "E. Trans fat"], 
+    a: "C" 
+  },
+  { 
+    n: 207, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: "How many ATP molecules are produced during the complete oxidation of palmitate?", 
+    o: ["A. 106 ATP", "B. 129 ATP", "C. 131 ATP", "D. 146 ATP", "E. 127 ATP"], 
+    a: "B" 
+  },
+  { 
+    n: 208, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: "What type of compound is L-Carnitine?", 
+    o: ["A. Fatty acid.", "B. Amino acid.", "C. Lipid.", "D. Carbohydrate.", "E. Vitamin."], 
+    a: "B" 
+  },
+  { 
+    n: 209, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: "What are the steps involved in one cycle of β Oxidation of fatty acids?", 
+    o: ["A. Hydration, Dehydrogenation, Cleavage, Dehydrogenation", "B. Dehydrogenation, Cleavage, Hydration, Dehydrogenation", "C. Condensation, Reduction, Dehydration, Reduction", "D. Dehydrogenation, hydration, Dehydrogenation, Cleavage", "E. Cleavage, Hydration, Dehydrogenation, Dehydrogenation"], 
+    a: "D" 
+  },
+  { 
+    n: 210, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: "Which of the following is an example of a derived lipid?", 
+    o: ["A. Prostaglandins", "B. Triacylglycerol", "C. Phospholipid", "D. Cholesterol ester", "E. Sphingomyelin"], 
+    a: "A" 
+  },
+  { 
+    n: 211, 
+    s: "Biochemistry", 
+    l: 6, 
+    q: "Energy expenditure due to high temperature:", 
+    o: ["A. Shivering", "B. Vasoconstriction", "C. Decreased respiration", "D. Excess sweating", "E. Glycogenolysis"], 
+    a: "D" 
+  },
+  { 
+    n: 212, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: " What is the calorie content of carbohydrates and fats, respectively?", 
+    o: ["A. 4 Cal / 4 Cal", "B. 4 Cal /9 Cal", "C. 9 Cal / 4 Cal", "D. 9 Cal / 9 Cal", "E. 4 Cal / 7 Cal"], 
+    a: "B" 
+  },
+  { 
+    n: 213, 
+    s: "Biochemistry", 
+    l: 5, 
+    q: "Which of the following is an antimitotic agent?", 
+    o: ["A. Asparaginase", "B. Alkylating agents", "C. Vinca alkaloid", "D. Antibiotics", "E. Cisplatin"], 
+    a: "C" 
+  },
+  { 
+    n: 214, 
+    s: "Biochemistry", 
+    l: 5, 
+    q: " Which of the following is an antimetabolite?", 
+    o: ["A. Vincristine", "B. Paclitaxel", "C. Doxorubicin", "D. Bleomycin", "E. Methotrexate"], 
+    a: "E" 
+  },
+  { 
+    n: 215, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: "Lipofuscin (Wear and Tear Pigment) results from:", 
+    o: ["A. Protein glycation.", "B. Lipid peroxidation.", "C. Iron overload.", "D. Glycogen accumulation.", "E. Bilirubin stasis."], 
+    a: "B" 
+  },
+  { 
+    n: 216, 
+    s: "Biochemistry", 
+    l: 9, 
+    q: "Nitrogen atom donner for urea:", 
+    o: ["A. Ammonia and Aspartate.", "B. Glutamine and Glutamate.", "C. Alanine and Glycine.", "D. Ammonia and Glutamine.", "E. Aspartate and Arginine."], 
+    a: "A" 
+  },
+  { 
+    n: 217, 
+    s: "Biochemistry", 
+    l: 4, 
+    q: "Removes blood clot:", 
+    o: ["A. Lipoprotein lipase", "B. Pepsin", "C. Amylase", "D. Hexokinase", "E. Streptokinase"], 
+    a: "E" 
+  },
+  { 
+    n: 218, 
+    s: "Biochemistry", 
+    l: 1, 
+    q: "Enzyme used for transfer of amine:", 
+    o: ["A. NAD+ coenzyme.", "B. FAD coenzyme.", "C. PLP coenzyme.", "D. Coenzyme A.", "E. Biotin coenzyme."], 
+    a: "C" 
+  },
+  { 
+    n: 219, 
+    s: "Biochemistry", 
+    l: 4, 
+    q: "Pepsinogen is best described as:", 
+    o: ["A. Active enzyme", "B. Coenzyme", "C. Hormone", "D. Proenzyme", "E. Substrate"], 
+    a: "D" 
+  },
+  { 
+    n: 220, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: "TGs present in plasma lipoproteins can be hydrolyzed by:", 
+    o: ["A. Hormone-sensitive lipase", "B. Pancreatic lipase", "C. lipoprotein lipase", "D. Gastric lipase", "E. Lingual lipase"], 
+    a: "C" 
+  },
+  { 
+    n: 221, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: "Which of the following is correct? <br><br> 1. ω3 can be obtained from salmon fish. <br> 2. Trans fat is harmful to health.", 
+    o: ["A. Only 1 is correct", "B. Only 2 is correct", "C. Neither is correct", "D. Both are correct"], 
+    a: "D" 
+  },
+  { 
+    n: 222, 
+    s: "Biochemistry", 
+    l: 4, 
+    q: "Biomarkers:", 
+    o: ["A. Biological state", "B. Normal biologic state", "C. Pathological process", "D. For pharmacological responses to therapeutic intervention", "E. All of the above"], 
+    a: "E" 
+  },
+  { 
+    n: 223, 
+    s: "Biochemistry", 
+    l: 3, 
+    q: "Glycolysis is:", 
+    o: ["A. The breakdown of glycogen to glucose", "B. The formation of pyruvate or lactate with ATP from glucose", "C. The synthesis of glucose from amino acids", "D. The oxidation of acetyl-CoA in TCA", "E. The conversion of glucose to fatty acids"], 
+    a: "B" 
+  },
+
+   { "n": 224, "s": "Biochemistry", "l": 6, "q": "Which of the following is not a factor in energy expenditure?", "o": ["A. Basal metabolic rate (BMR)", "B. Physical activity", "C. Environmental temperature", "D. Blood-brain barrier", "E. Thermic effect of food"], "a": "D" },
+  { "n": 225, "s": "Biochemistry", "l": 5, "q": "Which of the following agents is genotoxic?", "o": ["A. Nitrosamines", "B. Saccharin", "C. Nitrilotriacetic acid", "D. Estrogen", "E. Ethanol"], "a": "A" },
+  { "n": 226, "s": "Biochemistry", "l": 2, "q": "What is the function of thiolase in beta-oxidation?", "o": ["A. Dehydrogenation of acyl-CoA", "B. Hydration of enoyl-CoA", "C. Oxidation of hydroxyacyl-CoA", "D. Cleavage of beta-ketoacyl-CoA", "E. Activation of fatty acids"], "a": "D" },
+ { "n": 227, "s": "Biochemistry", "l": 5, "q": "Which of the following is true regarding p53?", "o": ["A. It acts primarily as a cytoplasmic structural protein.", "B. It binds DNA, which in turn stimulates another gene to produce a protein called p21 that interacts with a cell division-stimulating protein (cdk2).", "C. It directly phosphorylates retinoblastoma protein.", "D. It functions to accelerate cell cycle progression at G2/M phase.", "E. It decreases the expression of pro-apoptotic factors."], "a": "B" },
+  { "n": 228, "s": "Biochemistry", "l": 4, "q": "All of the following can cause a false positive creatine kinase (CK) test EXCEPT:", "o": ["A. Intramuscular injections.", "B. Vigorous physical exercise.", "C. Detoxification.", "D. Muscle trauma.", "E. Hypothyroidism."], "a": "C" },
+  { "n": 229, "s": "Biochemistry", "l": 2, "q": "How many ATP molecules are liberated from the complete beta-oxidation of oleic acid (18:1)?", "o": ["A. 120", "B. 131", "C. 146", "D. 106", "E. 144"], "a": "E" },
+  { "n": 230, "s": "Biochemistry", "l": 2, "q": "Which of the following is true regarding omega-3 (fish oil)?", "o": ["A. It causes vasoconstriction", "B. It increases plasma triglyceride concentrations significantly", "C. It promotes platelet aggregation", "D. It reduces anti-inflammatory eicosanoids", "E. It acts as a powerful beta-blocker"], "a": "A" },
+  { "n": 231, "s": "Biochemistry", "l": 4, "q": "What is the daily vitamin C requirement for an adult woman?", "o": ["A. 10-20 mg", "B. 30-45 mg", "C. 70-90 mg", "D. 150-200 mg", "E. 500-1000 mg"], "a": "C" },
+  { "n": 232, "s": "Biochemistry", "l": 4, "q": "Which of the following acts as a cofactor for vitamin A?", "o": ["A. Vitamin B1", "B. Vitamin B2", "C. Vitamin B3", "D. Vitamin B5", "E. Vitamin B12"], "a": "D" },
+  { "n": 233, "s": "Biochemistry", "l": 3, "q": "Glucocorticosteroid is characterized by which of the following?", "o": ["A. It decreases glycogenolysis.", "B. It acts primarily as a stress hormone.", "C. It decreases blood glucose levels.", "D. It increases the utilization of glucose in extrahepatic tissue.", "E. It stimulates insulin secretion directly."], "a": "B" },
+  { "n": 234, "s": "Biochemistry", "l": 3, "q": "Regarding gluconeogenesis, in which organs does it mainly happen?", "o": ["A. Heart and lung", "B. Kidney and liver", "C. Spleen and pancreas", "D. Stomach and intestine", "E. Brain and skeletal muscle"], "a": "B" },
+  { "n": 235, "s": "Biochemistry", "l": 3, "q": "McArdle disease is caused by a deficiency in which enzyme?", "o": ["A. Muscle phosphorylase deficiency.", "B. Glucose-6-phosphatase deficiency.", "C. Acid alpha-glucosidase deficiency.", "D. Liver phosphorylase deficiency.", "E. Debranching enzyme deficiency."], "a": "A" },
+  { "n": 236, "s": "Biochemistry", "l": 2, "q": "A glycolytic product that is used for triglyceride synthesis and is regarded as the glycerol backbone is:", "o": ["A. Pyruvate.", "B. Phosphoenolpyruvate.", "C. 3-phosphoglycerate.", "D. Glycerol-3-phosphate.", "E. 1,3-bisphosphoglycerate."], "a": "D" },
+  { "n": 237, "s": "Biochemistry", "l": 1, "q": "Which of the following cofactors is used for alanine transaminase activity?", "o": ["A. Thiamine pyrophosphate (TPP)", "B. Flavin adenine dinucleotide (FAD)", "C. Pyridoxal phosphate (PLP)", "D. Biotin", "E. Tetrahydrofolate (THF)"], "a": "C" },
+  { "n": 238, "s": "Biochemistry", "l": 1, "q": "Which of the following molecules is used for asparagine production?", "o": ["A. GTP", "B. UTP", "C. CTP", "D. TTP", "E. ATP"], "a": "E" },
+  { "n": 239, "s": "Biochemistry", "l": 1, "q": "Which of the following is required for the biosynthesis of glutamate?", "o": ["A. FADH2", "B. NADPH", "C. Ascorbate", "D. NADH", "E. Coenzyme Q"], "a": "D" },
+  { "n": 240, "s": "Biochemistry", "l": 4, "q": "Which enzyme indicates pancreatic function?", "o": ["A. Amylase", "B. Alanine transaminase", "C. Creatine kinase", "D. Alkaline phosphatase", "E. Lactate dehydrogenase"], "a": "A" },
+  { "n": 241, "s": "Biochemistry", "l": 2, "q": "Regarding plasma lipoproteins, which statement is CORRECT?", "o": ["A. They contain a hydrophilic core composed of triglycerides and cholesterol ester.", "B. They contain a hydrophobic core composed of triglycerides and cholesterol.", "C. They contain a hydrophobic core composed of triglycerides and cholesterol ester.", "D. They contain a hydrophilic core composed of triglycerides and cholesterol.", "E. All of them."], "a": "C" },
+  { "n": 242, "s": "Biochemistry", "l": 4, "q": "Which of the following has a non-competitive irreversible property?", "o": ["A. Fe", "B. Ca", "C. Mg", "D. Hg", "E. Zn"], "a": "D" },
+  { "n": 243, "s": "Biochemistry", "l": 6, "q": "Which of the following is WRONG about the heat of combustion?", "o": ["A. Carbohydrate combustion yields 4.1 kcal/gm.", "B. Vitamin C combustion yields 4.1 kcal/gm.", "C. Lipid combustion yields 9.3 kcal/gm.", "D. Protein combustion yields 5.4 kcal/gm.", "E. Alcohol combustion yields 7.1 kcal/gm."], "a": "B" },
+  { "n": 244, "s": "Biochemistry", "l": 6, "q": "Dietary fiber decreases the absorption of which essential mineral?", "o": ["A. Zn", "B. Na", "C. K", "D. Cl", "E. Mg"], "a": "A" },
+  { "n": 245, "s": "Biochemistry", "l": 4, "q": "Which of the following is NOT true about a typical cardiac tumor?", "o": ["A. It has a long half-life ensuring stability over weeks.", "B. It is highly specific to myocardium.", "C. It has a short half-life for rapid diagnosis.", "D. It peaks within 24 hours of injury.", "E. It is absent in healthy individuals."], "a": "C" },
+  { "n": 246, "s": "Biochemistry", "l": 3, "q": "Which enzyme converts fructose-1,6-bisphosphate into two trioses?", "o": ["A. Phosphofructokinase-1.", "B. Hexokinase.", "C. Phosphoglucose isomerase.", "D. Aldolase.", "E. Triose phosphate isomerase."], "a": "D" },
+  
+
+  { 
+    n: 247, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: "Which of the following is an ω-7 fatty acid?", 
+    o: ["A. Eicosatetraenoic acid", "B. Linoleic acid", "C. Palmitoleic acid", "D. Oleic acid", "E. Arachidonic acid"], 
+    a: "C" 
+  },
+  { 
+    n: 248, 
+    s: "Biochemistry", 
+    l: 20, 
+    q: "Which type of RNA polymerase is involved in producing tRNA?", 
+    o: ["A. RNA polymerase I", "B. RNA polymerase II", "C. RNA polymerase III", "D. RNA polymerase IV", "E. RNA polymerase V"], 
+    a: "C" 
+  },
+   { 
+    n: 249, 
+    s: "Biochemistry", 
+    l: 1, 
+    q: "Which disease is caused by tryptophan deficiency?", 
+    o: ["A. Richner-Hanhart syndrome", "B. Homocystinuria", "C. Hartnup's disease", "D. Alkaptonuria", "E. Albinism"], 
+    a: "C" 
+  },
+  { 
+    n: 250, 
+    s: "Biochemistry", 
+    l: 1, 
+    q: "Glutamate is synthesized from alpha-ketoglutarate by:", 
+    o: ["A. Oxidative phosphorylation", "B. Glutamate dehydrogenase", "C. Pyruvate carboxylase", "D. Glutamate synthetase", "E. Glutamate decarboxylase"], 
+    a: "B" 
+  },
+   { 
+    n: 251, 
+    s: "Biochemistry", 
+    l: 2, 
+    q: "The end product of beta oxidation of an odd-chain fatty acid is:", 
+    o: ["A. Acyl CoA only", "B. Acyl CoA + Propionyl CoA", "C. Acyl CoA + Malonyl CoA", "D. Acyl CoA + Palmitoyl CoA", "E. Acyl CoA + Oxaloacetate"], 
+    a: "B" 
+  },
+
+   { 
+    n: 252, 
+    s: "Biochemistry", 
+    l: 4, 
+    q: "Heavy metals are examples of:", 
+    o: ["A. Reversible competitive", "B. Reversible non-competitive", "C. Irreversible non-competitive", "D. Both competitive and non-competitive", "E. None of the above"], 
+    a: "C" 
+  },
+  { 
+    n: 253, 
+    s: "Biochemistry", 
+    l: 4, 
+    q: "Acid phosphatase enzymes are used for:", 
+    o: ["A. Prostatic carcinoma", "B. Osteoporosis", "C. Hepatitis", "D. Diabetes", "E. Bone disease"], 
+    a: "A" 
+  },
+
+  { 
+    n: 254, 
+    s: "Biochemistry", 
+    l: 6, 
+    q: "What is the term for the property of fibers binding to substances like toxins, cholesterol, and carcinogens?", 
+    o: ["A. Absorption", "B. Adsorption", "C. Digestion", "D. Metabolism", "E. Fermentation"], 
+    a: "B" 
+  },
+  { 
+    n: 255, 
+    s: "Biochemistry", 
+    l: 5, 
+    q: "What are the products of the reaction catalyzed by asparaginase?", 
+    o: ["A. Glutamic acid and urea.", "B. Aspartic acid and ammonia.", "C. Alanine and carbon dioxide.", "D. Glycine and water.", "E. Glutamine and hydrazine."], 
+    a: "B" 
+  },
+  { 
+    n: 256, 
+    s: "Biochemistry", 
+    l: 5, 
+    q: "Which of the following is classified as a non-genotoxic carcinogen that promotes growth without directly affecting DNA?", 
+    o: ["A. Asbestos.", "B. Cyclophosphamide.", "C. Nitrosamines.", "D. Saccharin.", "E. Aflatoxin B1."], 
+    a: "D" 
+  },
+  { 
+    n: 257, 
+    s: "Biochemistry", 
+    l: 5, 
+    q: "Which of the following is a class of plant alkaloids that act as antimetabolites by blocking mitosis?", 
+    o: ["A. Vinca alkaloids", "B. Alkylating agents", "C. Antibiotics", "D. Steroids", "E. Anthracyclines"], 
+    a: "A" 
+  },
+
    {
     "n": 258,
     "s": "Biochemistry",
@@ -125,15 +685,427 @@ window.QUIZ_CONFIG = {
     "a": "D"
   },
 
+  {
+    n: 265,
+    s: 'Biochemistry',
+    l: 2,
+    q: 'HDL activated by which enzyme?',
+    o: [
+      'A. Lipoprotein lipase',
+      'B. ACAT',
+      'C. Pancreatic lipase',
+      'D. LCAT',
+      'E. Hepatic lipase'
+    ],
+    a: 'D'
+  },
+  {
+    n: 266,
+    s: 'Biochemistry',
+    l: 3,
+    q: 'Which process causes increased glucose levels?',
+    o: [
+      'A. Glycolysis',
+      'B. Glycogenesis',
+      'C. Gluconeogenesis',
+      'D. Pentose phosphate pathway',
+      'E. Lipogenesis'
+    ],
+    a: 'C'
+  },
+  {
+    n: 267,
+    s: 'Biochemistry',
+    l: 4,
+    q: 'Lipase activity is dependent on which of the following ions?',
+    o: [
+      'A. Sodium',
+      'B. Calcium',
+      'C. Potassium',
+      'D. Magnesium',
+      'E. Zinc'
+    ],
+    a: 'B'
+  },
+  {
+    n: 268,
+    s: 'Biochemistry',
+    l: 4,
+    q: 'Fumarase, which converts fumarate to malate, is referred to as which enzyme class?',
+    o: [
+      'A. Lyases',
+      'B. Transferases',
+      'C. Isomerases',
+      'D. Ligases',
+      'E. Oxidoreductases'
+    ],
+    a: 'A'
+  },
+  {
+    n: 269,
+    s: 'Biochemistry',
+    l: 1,
+    q: 'All of the following are required for the biosynthesis of glutamate except:',
+    o: [
+      'A. Ammonia',
+      'B. NADH',
+      'C. α-ketoglutarate',
+      'D. Glutamate dehydrogenase',
+      'E. ATP'
+    ],
+    a: 'E'
+  },
+  
+  {
+    n: 270,
+    s: 'Biochemistry',
+    l: 2,
+    q: 'What is the first step of beta-oxidation?',
+    o: [
+      'A. Hydration',
+      'B. Thiolysis',
+      'C. Dehydrogenation',
+      'D. Condensation',
+      'E. Reduction'
+    ],
+    a: 'C'
+  },
+  {
+    n: 271,
+    s: 'Biochemistry',
+    l: 1,
+    q: 'The amino acid that detoxifies benzoic acid to form hippuric acid is:',
+    o: [
+      'A. Arginine',
+      'B. Glycine',
+      'C. Aspartic acid',
+      'D. Alanine',
+      'E. Asparagine'
+    ],
+    a: 'B'
+  },
+  {
+    n: 272,
+    s: 'Biochemistry',
+    l: 4,
+    q: 'Which of the following is WRONG about competitive inhibitors?',
+    o: [
+      'A. They bind to the active site.',
+      'B. Their effect can be overcome by increasing substrate concentration.',
+      'C. They increase the apparent Km value.',
+      'D. They do not alter Vmax.',
+      'E. They are irreversible.'
+    ],
+    a: 'E'
+  },
+  {
+    n: 273,
+    s: 'Biochemistry',
+    l: 3,
+    q: 'Which of the following is TRUE regarding TCA?',
+    o: [
+      'A. 1 NADH per turn',
+      'B. 2 NADH per turn',
+      'C. 0 NADH per turn',
+      'D. 3 NADH per turn',
+      'E. 4 NADH per turn'
+    ],
+    a: 'D'
+  },
+  {
+    n: 274,
+    s: 'Biochemistry',
+    l: 3,
+    q: 'What percentage of daily caloric intake typically comes from carbohydrates in a ketogenic diet?',
+    o: [
+      'A. 5-10%',
+      'B. 20-30%',
+      'C. 45-55%',
+      'D. 60-70%',
+      'E. 80-90%'
+    ],
+    a: 'A'
+  },
+  {
+    n: 275,
+    s: 'Biochemistry',
+    l: 4,
+    q: 'Which of the following is NOT a biomarker for the liver?',
+    o: [
+      'A. Alanine aminotransferase.',
+      'B. Aspartate aminotransferase.',
+      'C. Acid phosphatase.',
+      'D. Alkaline phosphatase.',
+      'E. Bilirubin.'
+    ],
+    a: 'C'
+  },
+  {
+    n: 276,
+    s: 'Biochemistry',
+    l: 3,
+    q: 'Galactosemia?',
+    o: [
+      'A. Is an Infectious disease.',
+      'B. Is a Hereditary disease.',
+      'C. Is an Autoimmune disease.',
+      'D. Is a Nutritional deficiency disease.',
+      'E. Is a Neoplastic disease.'
+    ],
+    a: 'B'
+  },
+  {
+    n: 277,
+    s: 'Biochemistry',
+    l: 8,
+    q: 'How does alcohol contribute to the development of fatty liver?',
+    o: [
+      'A. By depleting ATP stores needed for lipid synthesis.',
+      'B. By directly accelerating VLDL secretion from liver cells.',
+      'C. By blocking the absorption of dietary carbohydrates.',
+      'D. By destroying the structural proteins of adipocytes.',
+      'E. By generating an excess of NADH, which inhibits the oxidation of fatty acids (triglycerides).'
+    ],
+    a: 'E'
+  },
   { 
-    n: 265, 
+    n: 278, 
+    s: "Biochemistry", 
+    l: 4, 
+    q: "C-peptide links the insulin A and B chains in proinsulin. The peptide is removed by proteolytic processing via:", 
+    o: ["A. Carboxypeptidase E", "B. Trypsin", "C. Chymotrypsin", "D. Pepsin", "E. Amylase"], 
+    a: "A" 
+  },
+  { 
+    n: 279, 
+    s: "Biochemistry", 
+    l: 4, 
+    q: "Which of the following is an example of competitive enzyme inhibition?", 
+    o: ["A. Cyanide inhibition of cytochrome c oxidase.", "B. Aspirin inhibition of cyclooxygenase.", "C. HMG-CoA reductase inhibition by statins.", "D. Organophosphate inhibition of acetylcholinesterase.", "E. Allosteric inhibition of phosphofructokinase by ATP."], 
+    a: "C" 
+  },
+  { 
+    n: 280, 
+    s: "Biochemistry", 
+    l: 3, 
+    q: "All of the following statements about gluconeogenesis are correct EXCEPT:", 
+    o: ["A. The main substrates are fatty acids, lactate, and amino acids.", "B. It occurs primarily in the liver and kidneys.", "C. It requires energy in the form of ATP and GTP.", "D. It utilizes biotin-dependent carboxylase reactions.", "E. It helps to maintain blood glucose levels during fasting."], 
+    a: "A" 
+  },
+  { 
+    n: 281, 
+    s: "Biochemistry", 
+    l: 3, 
+    q: "All of the following statements about glycolysis are correct EXCEPT:", 
+    o: ["A. It takes place entirely within the cytosol of the cell.", "B. Phosphofructokinase-1 is a key regulatory enzyme.", "C. It generates a net total of two ATP molecules per glucose under anaerobic conditions.", "D. In aerobic conditions, pyruvate becomes lactate.", "E. Hexokinase/glucokinase catalyzes the first irreversible step."], 
+    a: "D" 
+  },
+  { 
+    n: 282, 
+    s: "Biochemistry", 
+    l: 8, 
+    q: "Which of the following is NOT a cause of fatty liver?", 
+    o: ["A. Chronic alcoholism", "B. Hyperthyroidism", "C. Diabetes mellitus", "D. Protein-calorie malnutrition", "E. Obesity"], 
+    a: "B" 
+  },
+  { 
+    n: 283, 
+    s: "Biochemistry", 
+    l: 8, 
+    q: "In pathological conditions like fatty liver, what is the approximate percentage of fat present in the liver?", 
+    o: ["A. 1-2%", "B. 5-10%", "C. 12-15%", "D. 18-22%", "E. 25-30%"], 
+    a: "E" 
+  },
+  { 
+    n: 284, 
+    s: "Biochemistry", 
+    l: 1, 
+    q: "Which of the following is not required for the biosynthesis of glutamine?", 
+    o: ["A. Alpha-ketoglutarate", "B. Glutamate", "C. Ammonia", "D. ATP", "E. Glutamine synthetase"], 
+    a: "A" 
+  },
+
+  {
+    "n": 285,
+    "s": "Biochemistry",
+    "l": 2,
+    "q": "What is the correct sequential order of enzymatic steps required to complete a single cycle of mitochondrial beta-oxidation of fatty acids?",
+    "o": ["A. Condensation - Reduction - Dehydration - Reduction.", "B. Cleavage - Dehydrogenation - Hydration - Dehydrogenation.", "C. Dehydrogenation - Hydration - Dehydrogenation - Cleavage.", "D. Dehydrogenation - Dehydration - Dehydrogenation - Cleavage.", "E. Hydration - Dehydrogenation - Hydration - Cleavage."],
+    "a": "C"
+  },
+
+   {
+    "n": 286,
+    "s": "Biochemistry",
+    "l": 2,
+    "q": "During the complete beta-oxidation of one molecule of oleic acid (18:1, Delta 9), what is the net total yield of ATP generated via oxidative phosphorylation?",
+    "o": ["A. 129 ATP", "B. 146 ATP", "C. 148 ATP", "D. 106 ATP", "E. 144 ATP"],
+    "a": "E"
+  },
+  {
+    "n": 287,
+    "s": "Biochemistry",
+    "l": 3,
+    "q": "Which statement accurately defines the fundamental biochemical consequence of the metabolic pathway known as glycolysis?",
+    "o": ["A. The direct oxidative breakdown of glucose to generate NADPH.", "B. The oxidative conversion of acetyl-CoA into carbon dioxide.", "C. The polymerization of glucose molecules into storage glycogen.", "D. The direct generation of glucose from non-carbohydrate substrates.", "E. Conversion of glucose into pyruvate molecules."],
+    "a": "E"
+  },
+  {
+    "n": 288,
+    "s": "Biochemistry",
+    "l": 1,
+    "q": "In the metabolic biosynthesis of glutamate, which of the following enzymes is NOT required or involved?",
+    "o": ["A. NADH", "B. Glutamate dehydrogenase", "C. Glutamate synthetase", "D. Alpha-ketoglutarate", "E. Ammonia"],
+    "a": "C"
+  },
+  {
+    "n": 289,
+    "s": "Biochemistry",
+    "l": 3,
+    "q": "Which hormone actively lowers blood glucose concentration?",
+    "o": ["A. Glucagon", "B. Cortisol", "C. Insulin", "D. Adrenaline", "E. Thyroid hormone"],
+    "a": "C"
+  },
+  {
+    "n": 290,
+    "s": "Biochemistry",
+    "l": 2,
+    "q": "Which monounsaturated fatty acid is biochemically classified and widely recognized as an Omega-7 fatty acid?",
+    "o": ["A. Linoleic acid", "B. Oleic acid", "C. Alpha-linolenic acid", "D. Arachidonic acid", "E. Palmitoleic acid"],
+    "a": "E"
+  },
+
+   {
+    "n": 291,
+    "s": "Biochemistry",
+    "l": 4,
+    "q": "The enzyme maltase, which cleaves a disaccharide into two glucose monomers using a water molecule, is classified under which primary EC enzyme category?",
+    "o": ["A. Ligase", "B. Hydrolase", "C. Lyase", "D. Transferase", "E. Isomerase"],
+    "a": "B"
+  },
+
+   {
+    "n": 292,
+    "s": "Biochemistry",
+    "l": 2,
+    "q": "What is the primary physiological function of carnitine within the intracellular metabolism of long-chain fatty acids?",
+    "o": ["A. Transport of extracellular fatty acids.", "B. Transport of intracellular fatty acids into the mitochondrial matrix.", "C. Activation of fatty acids into fatty acyl-CoA.", "D. Hydrolysis of triacylglycerols in adipose tissue.", "E. Condensation of acetyl-CoA subunits during synthesis."],
+    "a": "B"
+  },
+
+  {
+    "n": 293,
+    "s": "Biochemistry",
+    "l": 5,
+    "q": "Which oncofetal serum tumor marker is standardly monitored to screen for recurrence or monitor response to treatment in a patient with advanced cecal/colorectal adenocarcinoma?",
+    "o": ["A. Alpha-fetoprotein (AFP).", "B. Human chorionic gonadotropin (hCG).", "C. Carcinoembryonic antigen (CEA).", "D. Cancer antigen 125 (CA 125).", "E. Cancer antigen 19-9 (CA 19-9)."],
+    "a": "C"
+  },
+  
+  {
+    "n": 294,
+    "s": "Biochemistry",
+    "l": 7,
+    "q": "Which ketone body is uniquely generated via the non-enzymatic, spontaneous decarboxylation of acetoacetate in a patient experiencing severe ketoacidosis?",
+    "o": ["A. Alpha-ketoglutarate", "B. Acetone", "C. Beta-hydroxybutyrate", "D. Acetoacetyl-CoA", "E. Oxaloacetate"],
+    "a": "B"
+  },
+
+  {
+    "n": 295,
+    "s": "Biochemistry",
+    "l": 4,
+    "q": "Which of the following serum enzymes is highly specific and standardly utilized to detect or confirm hepatobiliary obstruction or injury?",
+    "o": ["A. Gamma-Glutamyl Transferase (GGT)", "B. Creatine Kinase (CK)", "C. Amylase", "D. Aspartate Aminotransferase (AST)", "E. Alanine Aminotransferase (ALT)"],
+    "a": "A"
+  },
+   {
+    "n": 296,
+    "s": "Biochemistry",
+    "l": 1,
+    "q": "Hartnup's disease is caused by deficiency of:",
+    "o": ["A. Tryptophan decarboxylase", "B. Tryptophan dioxygenase", "C. Tryptophan synthase", "D. Tryptophan hydroxylase", "E. Tryptophan oxygenase"],
+    "a": "B"
+  },
+  {
+    "n": 297,
+    "s": "Biochemistry",
+    "l": 3,
+    "q": "In Krebs cycle:",
+    "o": ["A. Acetyl CoA is combined to oxaloacetate resulting in Isocitrate.", "B. 2GTP are produced per one acetyl CoA.", "C. 3NADH are produced from this cycle per glucose molecule.", "D. The FADH2 from this cycle per one acetyl CoA yields 2ATP through oxidative phosphorylation.", "E. The products of this cycle are energy + CO2."],
+    "a": "D"
+  },
+
+     { 
+    n: 298, 
     s: "Biochemistry", 
     l: 8, 
     q: "How alcohol will cause fatty liver?", 
     o: [""], 
     a: "Intake of even a moderate amount of ethanol generates excess NADH, which inhibits processes that require NAD+, such as gluconeogenesis and fatty acid oxidation."
   },
-  
+
+    { 
+  n: 299, 
+  s: "Biochemistry", 
+  l: 3,
+  q: "How many ATPs are produced from converting pyruvate to acetyl-CoA?", 
+  o: [""], 
+  a: "3 ATPs"
+},
+
+{ 
+  n: 300, 
+  s: "Biochemistry", 
+  l: 3,
+  q: "Where does this process (converting pyruvate to acetyl-CoA) occur?", 
+  o: [""], 
+  a: "Mitochondria."
+},
+{ 
+  n: 301, 
+  s: "Biochemistry", 
+  l: 3,
+  q: "How many NADH molecules are produced in the Krebs cycle?", 
+  o: [""], 
+  a: "3 NADHs"
+},
+
+{ 
+  n: 302, 
+  s: "Biochemistry", 
+  l: 3,
+  q: "Write the first and end products of the Krebs cycle.", 
+  o: [""], 
+  a: "First: Citrate \n\nEnd: Oxaloacetate"
+},
+    
+{ 
+  n: 303, 
+  s: "Biochemistry", 
+  l: 3,
+  q: "How many NADH molecules are generated during the complete aerobic oxidation of pyruvate to oxaloacetate through Krebs Cycle (One Pyruvate)?", 
+  o: [""], 
+  a: "4 NADH Molecules."
+},
+    
+  { 
+    n: 304, 
+    s: "Biochemistry", 
+    l: 3,
+    q: "How many NADH molecules are produced during complete aerobic oxidation of one glucose molecule (starting from glucose to acetyl coenzyme A)?", 
+    o: [""], 
+    a: "4 NADH molecules"
+  },
+  { 
+    n: 305, 
+    s: "Biochemistry", 
+    l: 3,
+    q: "How many NADH molecules are produced from the complete aerobic oxidation of one glucose molecule (starting from pyruvate to the end of the Krebs cycle)?", 
+    o: [""], 
+    a: "8 NADH molecules"
+  },
+
 
   
     ]
