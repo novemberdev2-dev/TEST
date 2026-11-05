@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSD_End-Block_Practice_2025-2026</title>
+    <link rel="stylesheet" href="tools.css?v=1">
+</head>
+<body>
+
+<script>
+/* ---- Settings for THIS page only. Everything else lives in tools.js / tools.css ----
+   Practical (picture + short answer) questions. Same design as the theory pages. */
+window.QUIZ_CONFIG = {
+    title:    "MSD 🦴",
+    subtitle: "Practical Exam · 2025-2026",
+    note:     "",                       // optional note shown under the heading
+
+    // The year name. Subject pages show it in their year filter.
+    year: "Practical Exam _ 2025-2026",
+
+    // The number badge says "10 Qs" / "1 Q" instead of "10 MCQs".
+    unitOne:  "Q",
+    unitMany: "Qs",
+
+    // Subjects shown in the filter list (the one with the most questions comes first). Write the emoji after the name.
+    subjects: [
+        "Anatomy 🦴",
+        "Microbiology 🦠",
+        "Pathology 🔬",
+        "Physiology ⚡",
+        "Pharmacology 💊",
+    ],
+
+    // Subject files: OPTIONAL. Only read (if they exist) for a subject's emoji and lecture names. Missing files are ignored.
+    subjectFiles: [
+        "MSD_Anatomy.html",
+        "MSD_Microbiology.html",
+        "MSD_Pathology.html",
+        "MSD_Physiology.html",
+        "MSD_Pharmacology.html"
+    ],
+
+    // Each question:  n = number · s = subject name · l = lecture number
+    //   q + o + a        = a normal question (leave  o: [""]  for a short answer, then  a  is the answer text)
+    //   q + cases: [...] = a question with parts A, B ...  (each part: text, o: [""], a)
+    //   img              = optional picture(s) shown on the right:  img: "path.jpg"  or  img: ["a.jpg", "b.jpg"]
+    questions: [
+
+    {
+      n: 1,
+      s: "Anatomy",
+      l: 1,
+      q: "",
+      cases: [
+        { text: "A. Name the pointed part?", o: [""], a: "Head of radius." },
+        { text: "B. It articulates with:", o: [""], a: "1. Radial notch of the ulna. \n\n 2. Capitulum of the humerus." },
+      ],
+      img: "Stage2_Images/MSD_EB_2025-2026/MSD_EB_2025-2026_001.jpg"
+    },
+
+    {
+      n: 2,
+      s: "Anatomy",
+      l: 1,
+      q: "",
+      cases: [
+        { text: "A. Name the pointed part?", o: [""], a: "Tibial tuberosity." },
+        { text: "B. Is the attatchment for?", o: [""], a: "Patellar ligament." },
+      ],
+      img: "Stage2_Images/MSD_EB_2025-2026/MSD_EB_2025-2026_002.jpg"
+    },
+
+    {
+      n: 3,
+      s: "Anatomy",
+      l: 1,
+      q: "",
+      cases: [
+        { text: "A. Name the pointed muscle?", o: [""], a: "Latissimus dorsi." },
+        { text: "B. Nerve supply of the muscle?", o: [""], a: "Thoracodorsal nerve." },
+      ],
+      img: "Stage2_Images/MSD_EB_2025-2026/MSD_EB_2025-2026_003.jpg"
+    },
+
+    {
+      n: 4,
+      s: "Anatomy",
+      l: 1,
+      q: "",
+      cases: [
+        { text: "A. Name the pointed muscle?", o: [""], a: "Tensor facia lata." },
+        { text: "B. Nerve supply of the muscle?", o: [""], a: "Superior gluteal nerve." },
+      ],
+      img: "Stage2_Images/MSD_EB_2025-2026/MSD_EB_2025-2026_004.jpg"
+    },
+
+    {
+      n: 5,
+      s: "Anatomy",
+      l: 1,
+      q: "",
+      cases: [
+        { text: "A. Name the pointed muscle?", o: [""], a: "Gluteus minimis." },
+        { text: "B. Nerve supply of the muscle?", o: [""], a: "Superior gluteal nerve." },
+      ],
+      img: "Stage2_Images/MSD_EB_2025-2026/MSD_EB_2025-2026_005.jpg"
+    },
+
+    {
+      n: 6,
+      s: "Physiology",
+      l: 1,
+      q: "",
+      cases: [
+        { text: "A. Name these electrodes (A and B).", o: [""], a: "A. Surface electrode (skin electrode).\n\nB. Needle electrode." },
+        { text: "B. Which nerve is compressed in the carpal tunnel syndrome?", o: [""], a: "Median nerve." },
+      ],
+      img: [
+        "Stage2_Images/MSD_EB_2025-2026/MSD_EB_2025-2026_006_A.jpg",
+        "Stage2_Images/MSD_EB_2024-2025/MSD_EB_2024-2025_011.jpg",
+      ]
+    },
+
+    {
+      n: 7,
+      s: "Pathology",
+      l: 1,
+      q: "This is a femoral head:",
+      cases: [
+        { text: "A. Explain what do you see grossly?", o: [""], a: "Discontinuous articular cartilage, bone exposure, and growth of osteophytes." },
+        { text: "B. What could be the underlying cause?", o: [""], a: "Osteoarthritis caused by mechanical pressure and aging factors." },
+      ],
+      img: "Stage2_Images/MSD_EB_2025-2026/MSD_EB_2025-2026_007.jpg"
+    },
+
+    {
+      n: 8,
+      s: "Pharmacology",
+      l: 1,
+      q: "Prescription analysis / Drug Hx:",
+      cases: [
+        { text: "A. What is the interaction between the drugs in the prescription?", o: [""], a: "The interaction is between meloxicam and lisinopril." },
+        { text: "B. What are the effects of this interaction?", o: [""], a: "Meloxicam antagonizes antihypertensive effect of captopril, also cause hyperkalemia." },
+      ]
+    },
+
+    {
+      n: 9,
+      s: "Microbiology",
+      l: 1,
+      q: "A micro question about Clostridium perfringens:",
+      cases: [
+        { text: "A. What is the most important toxin it produces?", o: [""], a: "Alpha toxin." },
+        { text: "B. What is the pattern of hemolysis on blood agar?", o: [""], a: "Double zone of hemolysis." },
+      ]
+    },
+
+    {
+      n: 10,
+      s: "Microbiology",
+      l: 1,
+      q: "An infection occurs due to a bacteria that is a gram-positive, catalase-positive, coagulase-positive coccus in grape-like clusters that ferments mannitol on mannitol salt agar, turning it yellow. <br> <br> What is the bacteria?",
+      o: [""],
+      a: "Staphylococcus aureus."
+    },
+
+    ]
+};
+</script>
+<script src="tools.js?v=5"></script>
+</body>
+</html>
