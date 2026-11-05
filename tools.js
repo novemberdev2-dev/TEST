@@ -357,6 +357,7 @@ function subjectLabel(name) {
                 <button class="search-toggle-btn" id="search-toggle-btn" onclick="toggleSearchBar()" title="Search">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                 </button>
+                <button class="search-toggle-btn copy-all-btn" id="copy-all-btn" onclick="copyAllQuestions(this)" title="Copy all questions"></button>
 ${subjectToggle}
             
                 </div>
@@ -482,6 +483,66 @@ function copyQuestion(btn) {
     copyTextToClipboard(fullText, btn);
 }
 
+
+/* ---- Copy ALL questions of the file (header copy icon) ----
+   Year file    : "<year name>" then every question with its written number.
+   Subject file : one block per year ("End-Block _ 2023-2024" ...), questions keep the number they
+                  have in that year file. Options are included. Filters / pins do not matter. */
+function allQuestionLines(item, num) {
+    const P = plainText;
+    const optLines = (opts, lettersIfMissing) => {
+        const arr = (opts || []).map(o => P(o)).filter(Boolean);
+        if (!arr.length) return [];
+        const lettered = arr.every((o, i) => new RegExp('^' + String.fromCharCode(65 + i) + '\\s*[.)]\\s').test(o));
+        return arr.map((o, i) => (lettered || !lettersIfMissing) ? o : String.fromCharCode(65 + i) + '. ' + o);
+    };
+    const lines = [];
+    if (isPracticalItem(item)) {
+        const caseTxt = item.case ? ' ' + P(item.case) : '';
+        if (Array.isArray(item.parts) && item.parts.length) {
+            lines.push(num + '.' + caseTxt);
+            item.parts.forEach((p, i) => {
+                const q = p.q != null ? p.q : (p.question != null ? p.question : '');
+                lines.push(String.fromCharCode(65 + i) + '. ' + P(q));
+                optLines(p.o || p.options, true).forEach(l => lines.push(l));
+            });
+        } else {
+            lines.push(num + '.' + caseTxt + (item.q ? ' ' + P(item.q) : ''));
+            optLines(item.o, true).forEach(l => lines.push(l));
+        }
+        return lines;
+    }
+    lines.push(num + '. ' + P(item.q));
+    if (Array.isArray(item.cases) && item.cases.length) {
+        item.cases.forEach(c => {
+            lines.push(P(c.text));
+            optLines(c.o, false).forEach(l => lines.push(l));
+        });
+    } else {
+        optLines(item.o, false).forEach(l => lines.push(l));
+    }
+    return lines;
+}
+
+function buildAllQuestionsText() {
+    const list = originalQuestionsOrder;                       // file order, not affected by pins
+    // subject page: use the number written in the year file (srcN); year page: its own number
+    const block = items => items.map(q => allQuestionLines(q, q.srcN != null ? q.srcN : qLabel(q)).join('\n')).join('\n\n');
+    if (YEAR_MODE) {                                           // subject page: grouped by year, year numbering
+        const parts = [];
+        YEARS.forEach(y => {
+            const items = list.filter(q => y.set.has(Number(q.n)));
+            if (items.length) parts.push(y.label + '\n\n' + block(items));
+        });
+        return parts.join('\n\n\n');
+    }
+    const head = QUIZ.year ? String(QUIZ.year).trim() + '\n\n' : '';   // year page
+    return head + block(list);
+}
+
+function copyAllQuestions(btn) {
+    copyTextToClipboard(buildAllQuestionsText(), btn);
+}
 
 function copyCase(btn) {
     const qBlock = btn.closest('.q-block');
@@ -1733,6 +1794,7 @@ window.addEventListener('pageshow', applyMainPageTheme);                        
 reorderQuestions();
 renderQuiz();
 
+document.querySelectorAll('.copy-all-btn').forEach(b => b.innerHTML = COPY_SVG);
 document.querySelectorAll('.pen-btn').forEach(b => b.innerHTML = PEN_SVG);
 document.querySelectorAll('.eraser-btn').forEach(b => b.innerHTML = ERASER_SVG);
 initGlobalDrawing();
