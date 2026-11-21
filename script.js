@@ -317,7 +317,9 @@ const ALL_SECTIONS = [
       
           { title: '2022-2023 Year Exam',   links: [
         { label: 'End-Block _ Practice', badge: '5 Qs', href: 'MSD/MSD_End-Block_Practice_2022-2023.html' },
-        { label: 'Final or End-Block', badge: '31 MCQs', href: 'MSD/MSD_FinalorEnd-Block_2022-2023.html' },
+            { label: 'End-Block', badge: '17 MCQs', href: 'MSD/MSD_End-Block_2022-2023.html' },
+            
+        { label: 'Final', badge: '31 MCQs', href: 'MSD/MSD_Final_2022-2023.html' },
 
       
      ]},
@@ -348,7 +350,7 @@ const ALL_SECTIONS = [
     ] },
 
      { title: 'Unknown Year Exam',     links: [
-      { label: 'Final', badge: '112 MCQs',  href: 'MSD/MSD_Final_Unknown-Year.html' },
+      { label: 'Final', badge: '104 MCQs',  href: 'MSD/MSD_Final_Unknown-Year.html' },
     
     ] },
     ]
@@ -549,36 +551,36 @@ msd: [
     ] },
   
    { title: 'Pharmacology 💊', links: [
-      { label: 'Theory',   badge: '63 MCQs', href: 'MSD/MSD_Pharmacology.html' },
+      { label: 'Theory',   badge: '66 MCQs', href: 'MSD/MSD_Pharmacology.html' },
       { label: 'Practice', badge: '3 Qs', href: 'MSD/MSD_Pharmacology_Practice.html' }
     ] },
 
     { title: 'Microbiology 🦠', links: [
-      { label: 'Theory',   badge: '63 MCQs', href: 'MSD/MSD_Microbiology.html' },
+      { label: 'Theory',   badge: '65 MCQs', href: 'MSD/MSD_Microbiology.html' },
       { label: 'Practice', badge: '15 Qs', href: 'MSD/MSD_Microbiology_Practice.html' }
     ] },
   
     { title: 'Anatomy 🦴', links: [
-      { label: 'Theory',   badge: '37 MCQs', href: 'MSD/MSD_Anatomy.html' },
+      { label: 'Theory',   badge: '38 MCQs', href: 'MSD/MSD_Anatomy.html' },
       { label: 'Practice', badge: '19 Qs', href: 'MSD/MSD_Anatomy_Practice.html' }
     ] },
 
     { title: 'Physiology ⚡', links: [
-      { label: 'Theory',   badge: '24 MCQs', href: 'MSD/MSD_Physiology.html' },
+      { label: 'Theory',   badge: '20 MCQs', href: 'MSD/MSD_Physiology.html' },
       { label: 'Practice', badge: '2 Qs', href: 'MSD/MSD_Physiology_Practice.html' }
     ] },
    
   { title: 'Histology 🫁', links: [
-      { label: 'Theory',   badge: '20 MCQs', href: 'MSD/MSD_Histology.html' },
+      { label: 'Theory',   badge: '26 MCQs', href: 'MSD/MSD_Histology.html' },
       { label: 'Practice', badge: '1 Q', href: 'MSD/MSD_Histology_Practice.html' }
     ] },
 
   
   { title: 'Radiology 🩻', links: [
-      { label: 'Theory',   badge: '46 MCQs', href: 'MSD/MSD_Radiology.html' }
+      { label: 'Theory',   badge: '47 MCQs', href: 'MSD/MSD_Radiology.html' }
     ] },
     { title: 'Biochemistry 🧪', links: [
-      { label: 'Theory',   badge: '15 MCQs', href: 'MSD/MSD_Biochemistry.html' },
+      { label: 'Theory',   badge: '16 MCQs', href: 'MSD/MSD_Biochemistry.html' },
      
     ] },
   
@@ -590,13 +592,13 @@ msd: [
     ] },
 
     { title: 'Dermatology ✨', links: [
-      { label: 'Theory',   badge: '7 MCQs', href: 'MSD/MSD_Dermatology.html' }
+      { label: 'Theory',   badge: '9 MCQs', href: 'MSD/MSD_Dermatology.html' }
     ] },
 
   
 
    { title: 'Embryology 👶', links: [
-      { label: 'Theory',   badge: '6 MCQs', href: 'MSD/MSD_Embryology.html' }
+      { label: 'Theory',   badge: '7 MCQs', href: 'MSD/MSD_Embryology.html' }
     ] },
 
     { title: 'Immunology 🛡️', links: [
